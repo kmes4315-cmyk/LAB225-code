@@ -18,7 +18,8 @@ from pathlib import Path
 
 import requests
 
-SEC_USER_AGENT = os.environ.get("SEC_USER_AGENT", "inflection-research kmes4315@gmail.com")
+# SEC asks for a contact email in the User-Agent; set SEC_USER_AGENT="name email" before fetching.
+SEC_USER_AGENT = os.environ.get("SEC_USER_AGENT", "inflection-research (set SEC_USER_AGENT)")
 BROWSER_USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
