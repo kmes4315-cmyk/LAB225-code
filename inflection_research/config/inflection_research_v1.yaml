@@ -1,0 +1,48 @@
+# 成長拐點研究 v1 設定檔
+# 門檻依 2026-10-16 已確認的決定；第一期之後凍結，要改就開新版本。
+version: inflection_research_v1
+
+timing:
+  # 第一期依文件「現在就做」：決策時間取執行當下，股價用最後一個完整交易日收盤。
+  decision_time_utc: "2026-10-16T14:30:00Z"
+  price_date: "2026-10-15"          # 2026-10-16 美股尚未收盤
+  weekly_schedule: "週六早上（台灣時間），用週五收盤"
+
+universe:
+  exchanges: [Nasdaq, NYSE, CBOE, TXSE]   # SEC company_tickers_exchange 的交易所欄位；排除 OTC 與空白
+  market_cap_min_usd: 500000000
+  market_cap_max_usd: 50000000000
+  # 金融與不動產：SIC 6000-6799（含銀行、保險、REIT、SPAC 空白支票公司 6770）
+  excluded_sic_ranges: [[6000, 6799]]
+  reporting_currency: USD
+  min_revenue_quarters: 7
+  # 文件寫「沿用現有範圍的流動性門檻」；本環境拿不到現有門檻，先只記錄 20 日成交金額中位數，不過濾。
+  liquidity_filter: record_only
+
+gates:
+  g2_ttm_revenue_yoy_min: 0.20
+  g3_acceleration_min_pp: 5.0          # 最近一季年增率 - 前兩季年增率平均
+  g4_ttm_op_margin_change_min_pp: 5.0  # 或「近 4 季內由虧轉盈」
+  g5_ocf: improve_or_turn_positive     # 軟門檻
+  g6_diluted_share_growth_max: 0.08
+  g7_relative_strength_months: 6       # 只標記
+
+source_classification:
+  gross_margin_price_driven_min_pp: 10.0
+  gross_margin_volume_driven_max_pp: 5.0
+  industry_sync_share_min: 0.5
+
+# 文件沒寫死、這次執行時採用的解讀（之後若要改，需開新版本）
+interpretations:
+  max_staleness_days: 200            # 最新一季期末距決策時間超過 200 天視為資料過期（資料不足）
+  quarter_length_days: [80, 100]
+  annual_length_days: [350, 380]
+  quarterly_derivation: "單季直接取；缺的單季用同一會計年度的累計數相減（6M-3M、9M-6M、FY-9M），科目或期間對不上就留白"
+  value_vintage: "同一期間有多個申報版本時，取決策時間前最後收件的那一版"
+  revenue_concept: "每家公司只用一個營收科目：在候選科目中挑最近一季有值者，同時有多個時取數值最大者"
+  ttm_requires_contiguous_quarters: true
+  g4_turned_profitable: "TTM 營業利益現在 > 0，且 4 季前的 TTM 營業利益 <= 0"
+  g5_improvement: "TTM 營業現金流 > 一年前的 TTM 營業現金流，或由負轉正"
+  g6_shares: "最近一季稀釋加權股數 vs 去年同季；同一份申報裡的比較期優先（已調整分割）"
+  shares_for_market_cap: "dei:EntityCommonStockSharesOutstanding（封面股數，決策時間前最新）；沒有就用最近一季基本加權股數"
+  industry_sync_proxy: "第一期還沒有競爭地圖卡，橫軸先用同 4 碼 SIC、且在範圍內的公司當同業（推定）"
