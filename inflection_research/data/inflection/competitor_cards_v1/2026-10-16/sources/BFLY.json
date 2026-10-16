@@ -1,0 +1,84 @@
+{
+ "ticker": "BFLY",
+ "cik": 1804176,
+ "name": "Butterfly Network, Inc.",
+ "tenk_url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000009/bfly-20251231.htm",
+ "tenk_accepted": "2026-02-27T18:04:55.000Z",
+ "business_intro": "\n Item 1. BUSINESS \n Overview \n Butterfly is the pioneer of the Ultrasound-on-Chip™ semiconductor platform and a leader in semiconductor-based point-of-care ultrasound technology. We combine proprietary hardware, intuitive software, services and educational offerings that can make ultrasound more accessible than ever before. Our flagship point-of-care solution enables the practical application of ultrasound information into the clinical workflow through affordable ultrasound devices that fit in a healthcare professional’s pocket and pair with cloud-connected software that is easily accessed through a mobile application. \n While Butterfly’s core commercial business is in the point-of-care ultrasound (“POCUS”) category, our technology is fundamentally different from incumbent POCUS devices, which we view as mere extensions of cart-based hospital workflows. In contrast, Butterfly’s devices are built on our one-of-a-kind Ultrasound-on-Chip™ semiconductor platform. Our technology is designed for true mobility, not just because it is a single, portable imaging device suitable for any doctor or nurse, but also because it is powered by AI-driven tools, cloud connectivity, and seamless hospital integration. This combination of advanced, cloud-connected software and portable hardware is the key to mobility, allowing Butterfly to support large health systems while also functioning independently of them in remote or resource-limited settings. Wherever a doctor, nurse, or patient braves to go, Butterfly can deliver imaging that adapts to their environment and remains securely connected. \n With this proprietary, comprehensive portable ultrasound solution, that is protected by a robust intellectual property portfolio, we are on a mission to democratize healthcare by increasing access and use of ultrasound information wherever care is being delivered – whether a large healthcare system, a rural clinic, a global conflict zone or beyond. We are helping streamline and optimize deployment of ultrasound at scale across hospital systems with our Compass AI™ software that integrates into health system infrastructures, and connects across all departments and specialties. Furthermore, we envision a future where Butterfly’s imaging technology is fully integrated into hospital-at-home workflows, improving remote monitoring and management of patients’ health conditions from the comfort of their homes. \n We market and sell the Butterfly solution to healthcare systems, as well as to physicians and healthcare providers through a direct sales force, distributors, and our eCommerce channel. We generated total revenue of $97.6 million and $82.1 million in the years ended December 31, 2025 and 2024, respectively. We also incurred net losses of $77.1 million and $72.5 million for the years ended December 31, 2025 and 2024, respectively. \n Outside of the core POCUS category, Butterfly licenses its proprietary Ultrasound-on-Chip™ semiconductor platform for co-development of novel technologies in non-competitive markets through a program called Butterfly Embedded™. Examples of active engagement areas include brain computer interfaces, surgical robotics, and liver assessment technologies. Because our Ultrasound-on-Chip™ is cost-effective, power-efficient and offers an entire 3D-capable ultrasound machine on a chip about the size of two postage stamps – we believe there is vast opportunity for innovation across wearable, implantable, interventional and therapeutic healthcare use cases, as well as a number of non-medical applications. \n Butterfly employs approximately 220 employees as of January 31, 2026 and sells our products in over 30 countries through our sales force, independent distributors, and directly to physicians through our eCommerce channel. Outside of our core commercial geographies, Butterfly iQ+ is also being utilized in over 70 low resource settings around the world through global health partnerships. Butterfly iQ3 is currently FDA-cleared for sale in the United States and CE marked in Europe. \n 6 \n Table of Contents \n Corporate History and Information \n The Company, formerly known as Longview Acquisition Corp. (“Longview”), was incorporated in Delaware in 2020 as a blank check company formed for the purpose of effecting a merger, capital stock exchange, asset acquisition, stock purchase, reorganization or similar business combination with one or more businesses. Longview and Butterfly Network, Inc. (“Legacy Butterfly”), which was founded in 2011, completed a business combination (the “Business Combination”) on February 12, 2021, following which Longview was renamed Butterfly Network, Inc., and the business of Legacy Butterfly became our business. \n Since our founding, Butterfly and our disruptive technology have been recognized by Prix Galien USA, Fierce50, TIME’s Best Inventions, Fast Company’s World Changing Ideas, CNBC Disruptor 50, MedTech Breakthrough Awards, and won an Apple Design Award among other accolades. \n We have wholly-owned subsidiaries organized in the United States, Australia, Germany, the Netherlands, the United Kingdom and Taiwan. Our principal executive offices are located at 1600 District Avenue, Burlington, Massachusetts 01803 and our telephone number is (781) 557-4800. \n The Evolution of Ultrasound \n Digital health is systematically changing the way healthcare practitioners deliver care by providing information that informs better decision-making, while increasing access and significantly reducing patient-care costs. Butterfly devices are designed for this new wave of medical care with an easy-to-use interface that displays ultrasound information on your smartphone or tablet in real-time. \n Historically, the global ultrasound market has been dominated by traditional cart-based devices. These devices are accessible only to highly specialized, highly trained technicians and are located predominantly in hospitals, imaging centers, and physicians’ offices. Many healthcare institutions through",
+ "competition": [
+  {
+   "start": 54248,
+   "end": 56002,
+   "text": "Competition \n Several large companies currently constitute the bulk of ultrasound sales. High regulatory, distribution, manufacturing, and service-related long-term contractual costs represent significant barriers to entry for any new player. We expect that the existing market participants will remain strong active players in the future. \n As a general matter, we view competition on two levels: \n • Conventional ultrasound systems; and \n • The development of other handheld ultrasound systems with the same or better attributes. \n The primary competition comes from established market participants offering conventional ultrasound systems. While Butterfly's target is often non-traditional ultrasound users, we do compete with both traditional ultrasound manufacturers and other handheld ultrasound systems. However, Butterfly’s semiconductor technology differentiates us from our competitors in many ways, including the fact that our probes do not rely upon lead-based piezoelectric crystals that many of our competitors have relied upon since inception. Our semiconductor technology similarly enables a more versatile probe capable of performing whole-body scans, which is generally not possible with handheld ultrasound systems that rely upon piezoelectric crystals. Furthermore, Butterfly’s lack of reliance upon lead piezoelectric crystals allows us to remain RoHS-compliant in the EU without the use of the exemption from RoHS requirements for lead in single crystal piezoelectric materials in ultrasound transducers — an exemption that is not guaranteed to continue in perpetuity and that, as of October 2024, Butterfly has formally submitted a request to revoke the exemption with respect to handheld transducers to the European Commission."
+  }
+ ],
+ "reverse_mention_query": "Butterfly Network",
+ "reverse_mentions": [
+  {
+   "names": [
+    "MYOMO, INC.  (MYO)  (CIK 0001369290)"
+   ],
+   "cik": 1369290,
+   "accession": "0001193125-26-191496",
+   "file": "myo-20251231.htm",
+   "filed": "2026-04-29",
+   "in_competition_section": false,
+   "context": "ecutive coach and also serves as a director and Chairman of the Audit Committee and member of the Compensation committee at Vital Connect, Inc. In August 2025, Ms. Getz retired as the Chief Financial and Operations Officer and Corporate Secretary of Butterfly Network, Inc. (NYSE: BFLY) a position she held since July 2023. Prior to that she was the Chief Financial Officer from May 2022 to July 2023. Previously, Ms. Getz served as Chief Financial Officer and President of North America at Healthy.i"
+  },
+  {
+   "names": [
+    "Hyperfine, Inc.  (HYPR)  (CIK 0001833769)"
+   ],
+   "cik": 1833769,
+   "accession": "0001193125-26-114044",
+   "file": "hypr-20251231.htm",
+   "filed": "2026-03-18",
+   "in_competition_section": false,
+   "context": "ho received the Presidential Medal of Technology and Innovation in 2016 for inventing a novel next-generation DNA sequencing method and has founded more than ten healthcare and technology companies, including 454 Life Sciences, Ion Torrent, CuraGen, Butterfly Network, and Quantum-Si. We have raised equity from investments and partnership milestones from leading institutional investors, including GV (formerly Google Ventures), and grants, including the Bill & Melinda Gates Foundation (the “BMGF”)"
+  },
+  {
+   "names": [
+    "Seer, Inc.  (SEER)  (CIK 0001726445)"
+   ],
+   "cik": 1726445,
+   "accession": "0001193125-26-197354",
+   "file": "ck0001726445-20251231.htm",
+   "filed": "2026-04-30",
+   "in_competition_section": false,
+   "context": "logies Corporation (ADPT) \n Quanterix Corporation (QTRX) \n Akoya Biosciences, Inc. (AKYA) \n Quantum-Si Incorporated (QSI) \n Alector, Inc. (ALEC) \n Rapid Micro Biosystems, Inc. (RPID) \n Bionano Genomics, Inc. (BNGO) \n RAPT Therapeutics, Inc. (RAPT) \n Butterfly Network, Inc. (BFLY) \n Senseonics Holdings Inc. (SENS) (1) \n Codexis, Inc. (CDXS) \n SI-BONE, Inc. (SIBN) \n Hyperfine Inc. (HYPR) (1) \n Standard BioTools Inc. (LAB) \n Kodiak Sciences Inc. (KOD) \n X4 Pharmaceuticals Inc. (XFOR) (1) \n (1) Addi"
+  },
+  {
+   "names": [
+    "ANGIODYNAMICS INC  (ANGO)  (CIK 0001275187)"
+   ],
+   "cik": 1275187,
+   "accession": "0001628280-26-048138",
+   "file": "ango-20260531.htm",
+   "filed": "2026-07-14",
+   "in_competition_section": false,
+   "context": " Fuqua School of Business. \n Lawrence T. Weiss was appointed Senior Vice President, Chief Legal Officer and Corporate Secretary in December 2024. Prior to joining AngioDynamics, Mr. Weiss served as Executive Vice President and Chief Legal Officer of Butterfly Network, Inc., overseeing legal, compliance, quality and regulatory functions. Prior roles include Chief Legal Officer of Emulate, Inc., and Senior Vice President, General Counsel, and Corporate Secretary for Analog Devices, Inc. Mr. Weiss'"
+  },
+  {
+   "names": [
+    "Amplitude, Inc.  (AMPL)  (CIK 0001866692)"
+   ],
+   "cik": 1866692,
+   "accession": "0001193125-26-057847",
+   "file": "ampl-20251231.htm",
+   "filed": "2026-02-19",
+   "in_competition_section": false,
+   "context": "agement program. He supervises both our internal cybersecurity personnel and our retained external cybersecurity consultants. Mr. Levy previously served as the Chief Security Officer at Instabase and the Vice President of Engineering and Security at Butterfly Network, Inc. He was also the Head of Cybersecurity Engineering at Bridgewater Associates and held a variety of other engineering and security leadership roles at Goldman Sachs, Dow Jones & Co., Bloomberg LP, and National Instruments. Mr. L"
+  },
+  {
+   "names": [
+    "Acrivon Therapeutics, Inc.  (ACRV)  (CIK 0001781174)"
+   ],
+   "cik": 1781174,
+   "accession": "0001193125-26-115123",
+   "file": "acrv-20251231.htm",
+   "filed": "2026-03-19",
+   "in_competition_section": false,
+   "context": "ological Trial Group (ENGOT) and vice president of European Society of Gynecological Oncology (ESGO). Mary-Alice Miller, our Chief Legal Officer, has over 20 years of experience as a corporate attorney. She most recently served as General Counsel of Butterfly Network, a publicly listed medical device company. \n • Founding concept and vision. Our founders are leaders and respected authorities in the understanding of oncogenic kinase signaling, protein dysregulation through tyrosine phosphorylatio"
+  }
+ ]
+}

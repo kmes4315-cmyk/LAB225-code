@@ -1,0 +1,95 @@
+{
+ "ticker": "MTSI",
+ "cik": 1493594,
+ "name": "MACOM Technology Solutions Holdings, Inc.",
+ "tenk_url": "https://www.sec.gov/Archives/edgar/data/1493594/000149359425000054/mtsi-20251003.htm",
+ "tenk_accepted": "2025-11-15T02:04:07.000Z",
+ "business_intro": "\n ITEM 1. BUSINESS \n Overview \n We design, develop and manufacture differentiated semiconductor products and solutions for the Industrial and Defense (“I&D”), Data Center and Telecommunications (“Telecom”) industries for customers who demand high performance, quality and reliability. We are headquartered in Lowell, Massachusetts, with operational facilities throughout North America, Europe and Asia. We have more than 70 years of application expertise, combined with expertise in analog and mixed signal circuit design, compound semiconductor fabrication (including gallium arsenide (GaAs), gallium nitride (GaN), indium phosphide (InP) and specialized silicon), advanced packaging and back-end assembly and test. We offer a broad portfolio of thousands of standard and custom devices, which include integrated circuits (“ICs”), multi-chip modules (MCM), diodes, amplifiers, switches and switch limiters, passive and active components and radio frequency (RF) and optical subsystems, which make up dozens of product lines that service over 6,000 end customers in our three primary markets. Our products are electronic components that our customers generally incorporate into larger electronic systems, such as wireless basestations, high-capacity optical networks, data center networks, radar, medical systems, satellite networks and test and measurement applications. Our primary end markets are: (1) I&D, which includes military and commercial radar, RF jammers, electronic countermeasures, communication data links, space-related electronics and various wired and wireless multi-market applications, which include industrial, medical, test and measurement and scientific applications; (2) Data Center, which includes intra-Data Center, Data Center Interconnect (DCI) applications, at 100G, 200G, 400G, 800G, 1.6T and higher speeds, enabled by our broad portfolio of analog ICs and photonic components for high speed connectivity customers; and (3) Telecom, which includes carrier infrastructure such as long-haul/metro, 5G and 6G infrastructure, satellite communications (“SATCOM”) and Fiber-to-the-X (FTTx)/passive optical network (PON), among others. \n Certain of our products have long life cycles ranging from five to ten years, with some of our products generating revenue for over 20 years while others may have shorter life cycles of less than five years. We continue to develop new products and technologies to improve our ability to serve our primary markets. Our growth strategy is focused on expanding our addressable markets and product portfolio, strengthening our customer relationships and capturing more design wins in order to increase our market share. As we grow our portfolio and technology base, we believe our customers will select more of our components for use in their systems. \n Our manufacturing model consists of operating internal semiconductor wafer fabrication and assembly and test facilities supplemented with external foundry and assembly and test partners. We operate semiconductor fabrication facilities at our Lowell, Massachusetts headquarters, and in our Research Triangle Park, (“RTP”), North Carolina, Ann Arbor, Michigan, and Limeil-Brévannes, France locations. Certain of our facilities have achieved certification to the IATF16949 automotive standard, the AS9100D aerospace standard, the ISO9001 international quality standard, the ISO14001 environmental management standard and the ANSI/ESD S20.20:2021 standard. We manufacture compound semiconductors including GaAs, GaN and InP. Our Lowell, Massachusetts fabrication facility has been accredited by the United States Department of Defense with “Trusted Foundry” status, a designation conferred on microelectronics vendors exhibiting the highest levels of process integrity and protection. In the I&D markets, a domestic \n 3 \n fabrication facility may be a requirement to be a strategic supplier, and we believe our status as a Trusted Foundry for microelectronics goods and services offers us a further competitive advantage. \n We also utilize external semiconductor foundries to access additional process technologies and capacity. In aggregate, we utilize a broad array of internal, proprietary process technologies and commercially available foundry technologies, which allows us to select the most appropriate technology to solve our customers’ needs. This strategy is intended to provide us with broad access to process technology, dependable supply, control over quality, reduced capital investment requirements, faster time to market and additional outsourced capacity when needed. In addition, the know-how developed through the continued operation of our internal fabrication lines provides us with the expertise to better manage our external foundry suppliers. \n We were incorporated under the laws of the State of Delaware in March 2009. Our operations are conducted through our various subsidiaries, which are organized and operated according to the laws of their respective jurisdictions of incorporation. \n Research and Development \n Our research and development efforts aim to rapidly develop new and innovative products, process technologies and packaging techniques. The interaction of semiconductor process technology, circuit design and packaging technology defines the performance parameters and differentiation of our products. We believe some of our core competencies are the ability to model, design, test, integrate, package and manufacture differentiated solutions for our customers. We leverage these core competencies to solve difficult and complex challenges that our customers face during their system design phases. We believe our integrated and customized solutions offer customers high performance, quality, reliability and faster time to market. \n Circuit design and device modeling expertise. Our engineers are experts in the design of analog and mixed signal circuits capable of reliable, high-performance RF, microwave, millimeter wave and optical signal transm",
+ "competition": [
+  {
+   "start": 28465,
+   "end": 30555,
+   "text": "Competition \n The markets for our products are highly competitive and are characterized by continuously evolving customer requirements. We believe that the principal competitive factors in our markets include: \n ▪ the ability of engineering talent to drive innovation and new product development; \n ▪ the ability to timely design and deliver products and solutions that meet or exceed customers’ performance, reliability and price requirements; \n ▪ the breadth and diversity of product offerings; \n 6 \n ▪ the ability to provide a reliable supply of products in sufficient quantities and in a timely manner; \n ▪ the quality of customer service and technical support; and \n ▪ the financial reliability, operational stability and reputation of the supplier. \n We believe that we compete favorably with respect to these factors. We compete primarily with both our customers’ internal design resources and other suppliers of high-performance analog semiconductor solutions for use in wireless and wireline RF, microwave, millimeter wave and photonic applications, some of whom have greater financial resources and scale than us. We expect competition in our markets to change as new competitors enter these markets, existing competitors merge or form alliances and new technologies emerge. We believe that in the future there will be increased competition from companies utilizing alternative technologies, including high-volume manufacturers using low-cost silicon process technology. Some of our competitors are also our customers, and in certain product categories we compete with semiconductor manufacturers from which we also obtain foundry services. \n We primarily compete with Analog Devices, Inc. (“ADI”), Broadcom Inc. (“Broadcom”), Credo Technology Group Holding Ltd. (“Credo”), Marvell Technology Inc. (“Marvell”), MaxLinear Inc. (“MaxLinear”), Microchip Technology Incorporated (“Microchip”), NXP Semiconductors N.V. (“NXP”), Qorvo, Inc. (“Qorvo”), Semtech Corporation (“Semtech”), Skyworks Solutions, Inc. (“Skyworks”) and Sumitomo Electric Device Innovations, Inc. (“Sumitomo”)."
+  }
+ ],
+ "reverse_mention_query": "MACOM",
+ "reverse_mentions": [
+  {
+   "names": [
+    "KULICKE & SOFFA INDUSTRIES INC  (KLIC)  (CIK 0000056978)"
+   ],
+   "cik": 56978,
+   "accession": "0000056978-25-000081",
+   "file": "a6ex1015formofexecutivepsu.htm",
+   "filed": "2025-11-20",
+   "in_competition_section": false,
+   "context": "tchains Group Limited SiTime Corporation \n Intel Corporation SkyWater Technology, Inc. \n JinkoSolar Holding Co., Ltd. Skyworks Solutions, Inc. \n Kopin Corporation SMART Global Holdings, Inc. \n Lattice Semiconductor Corporation SPI Energy Co., Ltd. \n MACOM Technology Solutions Holdings, Inc. Synaptics Incorporated \n Magnachip Semiconductor Corporation Texas Instruments Incorporated \n Marvell Technology, Inc. Tower Semiconductor Ltd. \n Maxeon Solar Technologies, Ltd. Transphorm, Inc. \n MaxLinear, "
+  },
+  {
+   "names": [
+    "WOLFSPEED, INC.  (WOLF)  (CIK 0000895419)"
+   ],
+   "cik": 895419,
+   "accession": "0000895419-26-000054",
+   "file": "wolf-20260628.htm",
+   "filed": "2026-08-20",
+   "in_competition_section": false,
+   "context": "elds. \n Realized loss (gain) on equity investment . The realized loss (gain) on equity investment during the Predecessor period ended September 29, 2025 and fiscal 2025, respectively, relates to changes in fair value of the shares of common stock of MACOM Technology Solutions Holdings, Inc. received as partial consideration for the sale of the RF product line (the \"MACOM Shares\"). \n Loss on Wafer Supply Agreement . In connection with the completed sale of our former LED Business to SMART Global "
+  },
+  {
+   "names": [
+    "COHU INC  (COHU)  (CIK 0000021535)"
+   ],
+   "cik": 21535,
+   "accession": "0001437749-26-004339",
+   "file": "cohu20251227_10k.htm",
+   "filed": "2026-02-17",
+   "in_competition_section": false,
+   "context": "of ACM Research, Inc., Alpha & Omega Semiconductor Limited, Arlo Technologies, Inc., Axcelis Technologies, Inc., Badger Meter, Inc., FormFactor, Inc., Harmonic Inc., Ichor Holdings Ltd., indie Semiconductor, Inc., Kulicke and Soffa Industries, Inc., MACOM Technology Solutions Holdings, Inc., MaxLinear, Inc., Novanta, Inc., OSI Systems, Inc., PAR Technology Corporation, Penguin Solutions, Inc., Photronics, Inc., Power Integrations, Inc., Semtech Corporation, Silicon Laboratories Inc., Ultra Clean"
+  },
+  {
+   "names": [
+    "MAXLINEAR, INC  (MXL)  (CIK 0001288469)"
+   ],
+   "cik": 1288469,
+   "accession": "0001288469-26-000011",
+   "file": "mxl-20251231.htm",
+   "filed": "2026-01-29",
+   "in_competition_section": true,
+   "context": "peed interconnect products. Our primary merchant semiconductor competitors include Broadcom, Inc., Qualcomm Incorporated, Realtek Semiconductor Corp., Skyworks Solutions, Inc., Credo Semiconductor Inc., MediaTek, Inc., Marvell Technology Group Ltd., MACOM Technology Solutions Holdings, Inc., Texas Instruments Incorporated, Analog Devices, Inc., Renesas Electronics Corporation, Microchip Technology Inc. and Semtech Corporation. Because our products often are building block semiconductors which pr"
+  },
+  {
+   "names": [
+    "TTM TECHNOLOGIES INC  (TTMI)  (CIK 0001116942)"
+   ],
+   "cik": 1116942,
+   "accession": "0001193125-26-051976",
+   "file": "ttmi-20251229.htm",
+   "filed": "2026-02-17",
+   "in_competition_section": true,
+   "context": "o., Ltd., Kinwong Electronic Co. Ltd., Unimicron Technology Corp., Victory Giant Technology Co., Ltd., and WUS Printed Circuit Co., Ltd. Our principal competitors for our RF&S Components segment include Advanced Micro Devices, Inc., IDT Corporation, MACOM Technology Solutions Holdings, Inc., Microchip Technology Incorporated, Qorvo, Inc., and Silicon Laboratories Inc. \n We believe that our key competitive strengths include: \n Leading global technology manufacturer, offering breadth of technology"
+  },
+  {
+   "names": [
+    "Qorvo, Inc.  (QRVO)  (CIK 0001604778)"
+   ],
+   "cik": 1604778,
+   "accession": "0001628280-26-032873",
+   "file": "rfmd-20260328.htm",
+   "filed": "2026-05-08",
+   "in_competition_section": true,
+   "context": "or our products is highly competitive, and our customers provide no guarantees that our products will be included in the next generation of products introduced. \n HPA competes primarily with Analog Devices, Inc.; Axiro Semiconductor Private Limited; MACOM Technology Solutions Holdings, Inc.; Monolithic Power Systems, Inc.; Renesas Electronics Corporation; Scientific Components Corporation (d/b/a Mini-Circuits); Silergy Corp; and Texas Instruments, Inc. CSG competes primarily with Broadcom Inc.; "
+  },
+  {
+   "names": [
+    "Marvell Technology, Inc.  (MRVL)  (CIK 0001835632)"
+   ],
+   "cik": 1835632,
+   "accession": "0001835632-26-000011",
+   "file": "mrvl-20260131.htm",
+   "filed": "2026-03-11",
+   "in_competition_section": true,
+   "context": "es (“Alchip”), Astera Labs, Inc., Ayar Labs, Inc. (“Ayar Labs”), Broadcom Inc. (“Broadcom”), Cisco Systems, Inc. (“Cisco”), Credo Technology Group Holding Ltd, Intel Corporation, Global Unichip Corporation (“GUC”), Lightmatter, Inc. (“Lightmatter”), MACOM Technology Solutions Holdings, Inc., MediaTek Inc., Microchip Technology Inc., Montage Technology, Nvidia Corporation, NXP Semiconductors N.V., Phison Electronics Corporation, Qualcomm Incorporated (“Qualcomm”), Rambus, Inc., Ranovus Inc. (“Ran"
+  }
+ ]
+}

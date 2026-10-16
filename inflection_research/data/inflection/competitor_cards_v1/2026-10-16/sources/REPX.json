@@ -1,0 +1,78 @@
+{
+ "ticker": "REPX",
+ "cik": 1001614,
+ "name": "Riley Exploration Permian, Inc.",
+ "tenk_url": "https://www.sec.gov/Archives/edgar/data/1001614/000100161426000011/rep-20251231.htm",
+ "tenk_accepted": "2026-03-05T03:04:04.000Z",
+ "business_intro": " \n rep-20251231 \n UNITED STATES \n SECURITIES AND EXCHANGE COMMISSION \n Washington, D.C. 20549 \n FORM 10-K \n x ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 \n For the fiscal year ended December 31 , 2025 \n OR \n o TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 \n Commission file number 001-15555 \n Riley Exploration Permian, Inc. \n (Exact name of registrant as specified in its charter) \n Delaware 87-0267438 \n (State or other jurisdiction of incorporation or organization) (I.R.S. Employer Identification No.) \n 29 E. Reno Avenue , Suite 500 Oklahoma City , Oklahoma \n 73104 \n (Address of Principal Executive Offices) (Zip Code) \n Registrant's telephone number, including area code: ( 405 ) 415-8699 \n Securities registered pursuant to Section 12(b) of the Act: \n Title of each class Trading Symbol(s) Name of each exchange on which registered \n Common stock, par value $0.001 REPX NYSE American \n Indicate by check mark if the registrant is a well-known seasoned issuer, as defined by Rule 405 of the Securities Act. Yes o No x \n Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act. Yes o No x \n Indicate by check mark whether the registrant: (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports); and (2) has been subject to such filing requirements for the past 90 days. Yes x No o \n Indicate by check mark whether the registrant has submitted electronically and posted on its corporate web site, if any, every Interactive Data File required to be submitted and posted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit and post such files). Yes x No o \n Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, or a smaller reporting company. See the definitions of “large accelerated filer,” “accelerated filer” and “smaller reporting company” in Rule 12b-2 of the Exchange Act. (Check one): \n Large accelerated filer o Accelerated filer x \n Non-accelerated filer o Smaller reporting company o \n Emerging growth company o \n If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. o \n If securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. o \n Indicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to §240.1D-01(b). o \n Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Act). Yes o No x \n Indicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 USC. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. x \n Aggregate market value of the voting common equity held by non-affiliates of registrant as of June 30, 2025 was approximately $ 258.7 million. \n The total number of shares of common stock, par value $0.001 per share, outstanding as of March 2, 2026 was 21,567,428 . \n DOCUMENTS INCORPORATED BY REFERENCE \n The information required by Part III of this Annual Report on Form 10-K (\"Annual Report\"), to the extent not set forth herein, is incorporated herein by reference from the registrant's definitive proxy statement relating to the Annual Meeting of Stockholders to be held in 2026, which definitive proxy statement shall be filed with the Securities and Exchange Commission within 120 days after the end of the fiscal year to which this Annual Report relates. \n RILEY EXPLORATION PERMIAN, INC. \n ANNUAL REPORT ON FORM 10-K FOR THE YEAR ENDED DECEMBER 31, 2025 \n TABLE OF CONTENTS \n Page \n Part I \n Items 1 and 2. \n Business and Properties \n 6 \n Item 1A. \n Risk Factors \n 28 \n Item 1B. \n Unresolved Staff Comments \n 57 \n Item 1C. \n Cybersecurity \n 57 \n Item 3. \n Legal Proceedings \n 59 \n Item 4. \n Mine Safety Disclosures \n 59 \n Part II \n Item 5. \n Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities \n 60 \n Item 6. \n Selected Financial Data \n 61 \n Item 7. \n Management's Discussion and Analysis of Financial Condition and Results of Operations \n 61 \n Item 7A. \n Quantitative and Qualitative Disclosures About Market Risk \n 74 \n Item 8. \n Financial Statements and Supplementary Data \n 75 \n Item 9. \n Changes in and Disagreements with Accountants on Accounting and Financial Disclosures \n 75 \n Item 9A. \n Controls and Procedures \n 75 \n Item 9B. \n Other Information \n 78 \n Item 9C. \n Disclosure Regarding Foreign Jurisdictions that Prevent Inspections \n 78 \n Part III \n Item 10. \n Directors, Executive Officers and Corporate Governance \n 79 \n Item 11. \n Executive Compensation \n 79 \n Item 12. \n Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters \n 79 \n Item 13. \n Certain Relationships and Related Transactions, and Director Independence \n 79 \n Item 14. \n Principal Accountant Fees and Services \n 79 \n Part IV \n Item 15. \n Exhibits and Financial Statements Schedules \n 80 \n Item 16. \n Form 10-K Summary \n 83 \n Signatures \n 84 \n 2 \n Table of Con",
+ "competition": [],
+ "reverse_mention_query": "Riley Exploration",
+ "reverse_mentions": [
+  {
+   "names": [
+    "GULFPORT ENERGY CORP  (GPOR)  (CIK 0000874499)"
+   ],
+   "cik": 874499,
+   "accession": "0001628280-26-011487",
+   "file": "gpor-20251231xex1039.htm",
+   "filed": "2026-02-25",
+   "in_competition_section": false,
+   "context": " Energy Kosmos Energy Ltd. Mach Natural Resources LP \n Magnolia Oil & Gas Corporation Matador Resources Company Murphy Oil Corporation \n Northern Oil and Gas, Inc. Prairie Operating Co. PrimeEnergy Resources Corporation \n Range Resources Corporation Riley Exploration Permian, Inc. Sable Offshore Corp. \n SandRidge Energy, Inc. SM Energy Company Talos Energy Inc. \n VAALCO Energy, Inc. Vitesse Energy, Inc. W&T Offshore, Inc. \n"
+  },
+  {
+   "names": [
+    "Amplify Energy Corp.  (AMPY)  (CIK 0001533924)"
+   ],
+   "cik": 1533924,
+   "accession": "0001104659-26-025299",
+   "file": "ampy-20251231xex10d12.htm",
+   "filed": "2026-03-09",
+   "in_competition_section": false,
+   "context": "A-2\n ‌ ​ \n Exhibit B ​ \n ​ \n PEER GROUP \n 1.\n Diversified Energy Company PLC (DEC) \n 2.\n Evolution Petroleum Corporation (EPM) \n 3.\n Gran Tierra Energy Inc. (GTE) \n 4.\n Granite Ridge Resources, Inc. (GRNT) \n 5.\n Mach Natural Resources LP (MNR) \n 6.\n Riley Exploration Permian, Inc. (REPX) \n 7.\n Ring Energy, Inc. (REI) \n 8.\n SandRidge Energy, Inc. (SD) \n 9.\n TXO Partners L.P. (TXO) \n 10.\n VAALCO Energy, Inc. (EGY) \n 11.\n W&T Offshore, Inc. (WTI) \n 12.\n SPDR S&P Oil & Gas Exploration & Production E"
+  },
+  {
+   "names": [
+    "GENCO SHIPPING & TRADING LTD  (GNK)  (CIK 0001326200)"
+   ],
+   "cik": 1326200,
+   "accession": "0001140361-26-018263",
+   "file": "ef20071597_10ka.htm",
+   "filed": "2026-04-30",
+   "in_competition_section": false,
+   "context": "omparator group and\n approved the removal of Eagle Bulk Shipping Inc. and Overseas Shipholding Group, Inc. due to their acquisition by other companies and the removal of Helix Energy Solutions Group, Inc. and the addition of Amplify Energy Corp. and Riley Exploration\n Permian, Inc. so that the peer group consisted of companies more closely resembling the Company.\n Prior Year Say on Pay Results . At the May 20 , 2025 shareholders’ meeting, the non-binding advisory vote\n on executive compensation "
+  },
+  {
+   "names": [
+    "Epsilon Energy Ltd.  (EPSN)  (CIK 0001726126)"
+   ],
+   "cik": 1726126,
+   "accession": "0001104659-26-035794",
+   "file": "epsn-20251231x10k.htm",
+   "filed": "2026-03-27",
+   "in_competition_section": false,
+   "context": "(“ Dillon Read ”) from 1966 to 1997, serving most recently as a Managing Director until Dillon Read merged with SCB Warburg in September 1997. Mr. Lawrence also serves as a director of the following publicly traded companies: Ramaco Resources, Inc., Riley Exploration Permian, Inc., Hallador Energy Company and Kestrel Heat LLC, the general partner of Star Group, L.P., as well as other non-public companies in the energy industry in which Yorktown holds equity interests. Mr. Lawrence is a graduate "
+  },
+  {
+   "names": [
+    "STAR GROUP, L.P.  (SGU)  (CIK 0001002590)"
+   ],
+   "cik": 1002590,
+   "accession": "0001193125-25-311490",
+   "file": "sgu-20250930.htm",
+   "filed": "2025-12-09",
+   "in_competition_section": false,
+   "context": "Inc., where Mr. Lawrence was employed beginning in 1966, serving as a Managing Director until the merger of Dillon Read with SBC Warburg in September 1997. Mr. Lawrence also serves as a director of Hallador Petroleum Company, Ramaco Resources, Inc., Riley Exploration Permian, Inc. (each a United States publicly traded company), and certain non-public companies in the energy industry in which Yorktown partnerships hold equity interests. Mr. Lawrence is a graduate of Hamilton College and received "
+  },
+  {
+   "names": [
+    "Targa Resources Corp.  (TRGP)  (CIK 0001389170)"
+   ],
+   "cik": 1389170,
+   "accession": "0001193125-26-059296",
+   "file": "trgp-20251231.htm",
+   "filed": "2026-02-19",
+   "in_competition_section": false,
+   "context": "g interests, and resulted in a reduction to Net income (loss) attributable to common shareholders. \n In December 2025, we completed the purchase of all of the membership interests in Dovetail Midstream, LLC (“Dovetail”), a wholly-owned subsidiary of Riley Exploration Permian, Inc (“Riley”), and on December 24, 2025, we completed the purchase of certain compressor assets from Riley for aggregate cash consideration of approximately $ 122.8 million for both the membership interests in Dovetail and "
+  }
+ ]
+}

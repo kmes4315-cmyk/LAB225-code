@@ -1,0 +1,293 @@
+{
+ "ticker": "MCHP",
+ "cik": 827054,
+ "name": "MICROCHIP TECHNOLOGY INC",
+ "tenk_url": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000016/mchp-20260331.htm",
+ "tenk_accepted": "2026-05-22T00:40:59.000Z",
+ "business_intro": "\n Item 1. Business \n Overview \n We develop, manufacture and sell smart, connected and secure embedded control solutions used by our customers for a wide variety of applications. With over 35 years of technology leadership, our broad product portfolio offers a Total System Solution for our customers that can provide a large portion of the silicon requirements in their applications. TSS is a combination of hardware, software and services which help our customers increase their revenue, reduce their costs and manage their risks compared to other solutions. Our strategic focus includes general purpose and specialized mixed-signal microcontrollers, microprocessors, analog, FPGA, data center, networking, and memory products. In July 2024, we entered the 64-bit mixed-signal microprocessor market furthering our expansion beyond 32-bit architecture. Our synergistic product portfolio empowers disruptive growth trends, including AI/ML, data centers, edge computing and IoT, E-mobility, networking and connectivity, and sustainability in key end markets such as automotive, aerospace and defense, communications, consumer appliances, data centers and computing, and industrial. \n Industry Background \n Competitive pressures require OEMs to expand product functionality and provide differentiation while maintaining or reducing cost. To address these requirements, manufacturers often use integrated circuit-based embedded control systems that enable them to: \n • differentiate their products \n • replace less efficient electromechanical control devices \n • reduce the number of components in their system \n • add product functionality \n • reduce the system level energy consumption \n • make systems safer to operate \n • reduce the consumption of natural resources \n • connect their products to other devices \n • add security to their products \n • decrease time to market for their products \n • significantly reduce product cost \n Embedded control systems have been incorporated into thousands of products and subassemblies in a wide variety of applications and markets worldwide, including: \n • actuators \n • applications requiring touch buttons, touch screens and graphical user interfaces \n • automotive access control \n • automotive comfort, safety, advanced driver assistance systems, networking, information and entertainment applications \n • avionics \n • communication infrastructure systems \n • consumer electronics \n • data center solutions \n • defense and military hardware \n • electric vehicles \n • handheld tools \n 5 \n Table of Contents \n • home and building automation \n • industrial automation \n • IP routers and Ethernet switches \n • large and small home appliances \n • medical devices \n • motor controls units \n • portable computers and accessories \n • power supplies \n • residential and commercial security systems \n • robotics \n • satellites and spacecrafts \n • scale-up and scale-across systems for AI infrastructure \n • smart home, IoT and AI/ML edge devices \n • smart meters and energy monitoring \n • storage and server systems \n • user interface and control panels \n • video surveillance systems \n • wireless communication \n Embedded control systems typically incorporate a mixed-signal microcontroller, microprocessor or FPGA as the principal active, and sometimes sole, component. A mixed-signal microcontroller is a self-contained computer-on-a-chip consisting of a central processing unit, often with on-board non-volatile program memory for program storage, random access memory for data storage and various analog and digital input/output peripheral capabilities. In addition to the mixed-signal microcontroller, a complete embedded control system often incorporates application-specific software, various analog, power, mixed-signal, timing, connectivity, security and non-volatile memory components such as EEPROMs and Flash memory. \n Mixed-signal microcontrollers are primarily available in 8-bit through 32-bit architectures. 8-bit mixed-signal microcontrollers remain very cost-effective and easy to use for a wide range of high-volume embedded control applications and, as a result, continue to represent a significant portion of the overall mixed-signal microcontroller market. 16-bit and 32-bit mixed-signal microcontrollers provide higher performance and functionality, and are generally found in more complex embedded control applications. FPGAs are programmable integrated circuits that are used to implement complex logic functions and can be re-programmed at any time, allowing for multiple implementations and revisions during or after the customer system is manufactured. Some versions of FPGAs also include a mixed-signal microcontroller or microprocessor core to provide additional system on chip functionality to compute intensive tasks. Microprocessors integrate 32-bit (or above) central processing units (CPUs) with various high performance peripherals, such as communications and graphics, and execute code from external memory, typically dynamic random access memory. In July 2024, we entered the 64-bit mixed-signal microprocessor market furthering our expansion beyond 32-bit architecture. 64-bit multi-core microprocessors offer even greater computational power and are often utilized in applications requiring advanced processing capabilities, such as data-intensive tasks and sophisticated system operations such as Linux. \n Our Products \n Our strategic focus is on providing cost-effective embedded control solutions that also offer the advantages of small size, high performance, extreme low power usage, wide voltage range operation, mixed-signal integration, and ease of development, thus enabling timely and cost-effective integration of our solutions by our customers in their end products. \n Mixed-signal Microcontrollers \n We offer a broad family of proprietary general purpose mixed-signal microcontroller products, with significant analog and mixed-signal functionality incorporated within them, which are marketed under multiple bra",
+ "competition": [
+  {
+   "start": 35497,
+   "end": 37590,
+   "text": "Competition \n The semiconductor industry is intensely competitive and has historically been characterized by price erosion and rapid technological change. We compete with major domestic and international semiconductor companies, some of which have greater market recognition and greater financial, technical, marketing, distribution and other resources than we have with which to pursue engineering, manufacturing, marketing and distribution of their products. We also compete with a number of companies that we believe have copied, cloned, pirated or reverse engineered our proprietary product lines in such countries as China and Taiwan. We are continuing to take actions to vigorously and aggressively defend and protect our intellectual property on a worldwide basis. \n We currently compete principally on the basis of the technical innovation and performance of our embedded control products, including the following product characteristics: \n • performance and specifications \n • analog, digital and mixed-signal functionality and level of functional integration \n • field programmability \n • memory density \n • low power consumption \n • extended voltage ranges \n • reliability \n 10 \n Table of Contents \n • security and functional safety \n • packaging alternatives \n • comprehensive suite of development tools \n We believe that other important competitive factors in the embedded control market include: \n • our broad product portfolio offers a Total System Solutions through a combination of hardware, software and services \n • ease of use \n • functionality of application development systems \n • hardware, software and tool compatibility within product families to increase migration flexibility \n • dependable delivery, quality and availability \n • technical and innovative service and support \n • time to market \n • total solution cost \n • availability of easy to adopt reference designs and documentation \n We believe that we compete favorably with other companies on all of these factors, but if we are unable to compete successfully in the future, our business could be harmed."
+  }
+ ],
+ "reverse_mention_query": "Microchip",
+ "reverse_mentions": [
+  {
+   "names": [
+    "SKYWEST INC  (SKYW)  (CIK 0000793733)"
+   ],
+   "cik": 793733,
+   "accession": "0001104659-26-016358",
+   "file": "skyw-20251231xex10d5.htm",
+   "filed": "2026-02-17",
+   "in_competition_section": false,
+   "context": "n case Buyer fails to supply such information to Embraer in due time.\n 5. \n EXPORT CONTROL ITEMS \n The Aircraft contains (i) an IESI (Integrated Electronic Standby Instrument System) manufactured by Thales Avionics with an embedded QRS-11 gyroscopic microchip used for emergency backup and flight safety information, and (ii) IRU (Inertial Reference Unit) manufactured by Honeywell International. The IESI and the IRU that are incorporated into this Aircraft are subject to export control under Unite"
+  },
+  {
+   "names": [
+    "KULICKE & SOFFA INDUSTRIES INC  (KLIC)  (CIK 0000056978)"
+   ],
+   "cik": 56978,
+   "accession": "0000056978-25-000081",
+   "file": "a6ex1015formofexecutivepsu.htm",
+   "filed": "2025-11-20",
+   "in_competition_section": false,
+   "context": "uctor Corporation Texas Instruments Incorporated \n Marvell Technology, Inc. Tower Semiconductor Ltd. \n Maxeon Solar Technologies, Ltd. Transphorm, Inc. \n MaxLinear, Inc. Universal Display Corporation \n Meta Materials Inc. Valens Semiconductor Ltd. \n Microchip Technology Incorporated WiSA Technologies, Inc. \n Micron Technology, Inc. Wolfspeed, Inc. \n Exhibit 10.15 \n The Peer Companies may change over the Performance Period as follows: \n • In the event of a merger, acquisition or business combinat"
+  },
+  {
+   "names": [
+    "MOBIX LABS, INC  (MOBX, MOBXW)  (CIK 0001855467)"
+   ],
+   "cik": 1855467,
+   "accession": "0001493152-26-004073",
+   "file": "form10-ka.htm",
+   "filed": "2026-01-28",
+   "in_competition_section": false,
+   "context": " contributed\nto the development of custom analog device and process technologies and CAD systems. From January 2007 to June 2018, he also served as\nChief Technology Officer, as well as senior vice president of advanced development, of Microsemi, now Microchip Technology Inc., a technology\ncompany specializing in semiconductor and systems solutions for communications, defense and security, aerospace and industrial markets.\nSince retiring in June 2018, Mr. Aralis has spent his time consulting, adv"
+  },
+  {
+   "names": [
+    "Autonomix Medical, Inc.  (AMIX)  (CIK 0001617867)"
+   ],
+   "cik": 1617867,
+   "accession": "0001437749-26-018573",
+   "file": "amix20260331_10k.htm",
+   "filed": "2026-05-27",
+   "in_competition_section": false,
+   "context": "diofrequency (“RF”) ablation, enabling a “sense, treat, verify” approach intended to improve the precision and consistency of nerve-targeted therapies.\n The technology we have developed consists of a catheter-based system incorporating a proprietary microchip-enabled sensing architecture designed to detect low-amplitude neural signals from within the vascular system. By placing signal amplification and digitization at or near the point of detection, this approach is intended to reduce signal deg"
+  },
+  {
+   "names": [
+    "CEVA INC  (CEVA)  (CIK 0001173489)"
+   ],
+   "cik": 1173489,
+   "accession": "0001437749-26-006091",
+   "file": "ceva20251231_10k.htm",
+   "filed": "2026-02-27",
+   "in_competition_section": false,
+   "context": ", ASR Microelectronics, Atmosic, Beken, Bestechnic, boAt, Broadcom, Ceragon, Cirrus Logic, Espressif Systems, ESWIN, Fujifilm, Rockchip, Goodix, Hisense, iCatch Technology, iCOM, InPlay, Intel, Itron, LG Electronics, LifeSignals, ListenAI, MediaTek, Microchip, Nations Technologies, Nextchip, Nordic Semiconductor, Nothing, Novatek, NXP, onsemi, Oticon, Panasonic, Qualcomm, Realtek, Renesas, Rohm, Samsung, SatixFy, Sharp, SiFli, SigmaStar, Socionext, Sony, Sonova, STMicroelectronics, Synaptics, TH"
+  },
+  {
+   "names": [
+    "SKYWORKS SOLUTIONS, INC.  (SWKS)  (CIK 0000004127)"
+   ],
+   "cik": 4127,
+   "accession": "0000004127-26-000003",
+   "file": "swks-20251003.htm",
+   "filed": "2026-01-30",
+   "in_competition_section": false,
+   "context": "f Executive Officer of Standard Microsystems Corporation (“Standard Microsystems”) (a publicly traded developer of silicon-based integrated circuits utilizing analog and mixed-signal technologies) from 2008 until the company’s acquisition in 2012 by Microchip Technology, Inc. Prior to Standard Microsystems, Ms. King was Chief Executive Officer of AMI Semiconductor, Inc., a publicly traded company, from 2001 until it was acquired by ON Semiconductor Corp. in 2008. \n Other Public Company Boards \n "
+  },
+  {
+   "names": [
+    "Atomera Inc  (ATOM)  (CIK 0001420520)"
+   ],
+   "cik": 1420520,
+   "accession": "0001683168-26-001291",
+   "file": "atomera_i10k-123125.htm",
+   "filed": "2026-02-24",
+   "in_competition_section": false,
+   "context": "peeds required for workloads at every scale from data center to endpoint.\n 2 \n The Pursuit of Increased Semiconductor Performance \n For years, the semiconductor\nindustry was able to almost double the number of transistors it could pack into a single microchip about every two years, a rate of improvement\ncommonly known as “Moore’s Law.” The semiconductor industry uses the term “node” to describe the minimum\nline width or geometry on a semiconductor chip, expressed in nanometers, or nm, for today’"
+  },
+  {
+   "names": [
+    "Lemonade, Inc.  (LMND)  (CIK 0001691421)"
+   ],
+   "cik": 1691421,
+   "accession": "0001691421-26-000016",
+   "file": "exhibit1028-wholeaccountqu.htm",
+   "filed": "2026-02-25",
+   "in_competition_section": false,
+   "context": "to another company. \n Q. Losses directly or indirectly occasioned by: \n 1. Loss of, alteration of or damage to; or \n 2. A reduction in the functionality or operation of; \n a computer system, hardware, program, software, data, information repository, microchip, integrated circuit or similar device in computer equipment or non-computer equipment, whether the property of the policyholder of the Company or not. This exclusion shall not apply to losses arising out of one or more of the following peri"
+  },
+  {
+   "names": [
+    "MACOM Technology Solutions Holdings, Inc.  (MTSI)  (CIK 0001493594)"
+   ],
+   "cik": 1493594,
+   "accession": "0001493594-25-000054",
+   "file": "mtsi-20251003.htm",
+   "filed": "2025-11-14",
+   "in_competition_section": true,
+   "context": "urers from which we also obtain foundry services. \n We primarily compete with Analog Devices, Inc. (“ADI”), Broadcom Inc. (“Broadcom”), Credo Technology Group Holding Ltd. (“Credo”), Marvell Technology Inc. (“Marvell”), MaxLinear Inc. (“MaxLinear”), Microchip Technology Incorporated (“Microchip”), NXP Semiconductors N.V. (“NXP”), Qorvo, Inc. (“Qorvo”), Semtech Corporation (“Semtech”), Skyworks Solutions, Inc. (“Skyworks”) and Sumitomo Electric Device Innovations, Inc. (“Sumitomo”). \n Backlog and"
+  },
+  {
+   "names": [
+    "SILICON LABORATORIES INC.  (SLAB)  (CIK 0001038074)"
+   ],
+   "cik": 1038074,
+   "accession": "0001038074-26-000005",
+   "file": "slab-20260103.htm",
+   "filed": "2026-02-10",
+   "in_competition_section": true,
+   "context": "ftware to implement our ICs in their products. \n Due to our diversified product portfolio and the numerous markets and applications we serve, we compete against a relatively large number of competitors. We compete with Espressif, Infineon, MediaTek, Microchip, Nordic Semiconductor, NXP, Qualcomm, Renesas, STMicroelectronics, Synaptics, Telink, Texas Instruments and others. We expect to face competition in the future from our current competitors, other manufacturers, designers of semiconductors, "
+  },
+  {
+   "names": [
+    "FOCUS UNIVERSAL INC.  (FCUV)  (CIK 0001590418)"
+   ],
+   "cik": 1590418,
+   "accession": "0001683168-26-002503",
+   "file": "focus_i10k-123125.htm",
+   "filed": "2026-03-31",
+   "in_competition_section": false,
+   "context": "e United States such as Texas Instruments and Intel for the major components. Other key suppliers we could consider include Analog\nDevices, Skyworks Solutions, Infineon, STMicroelectronics, NXP Semiconductors, Maxim Integrated, On Semiconductor, and Microchip Technology.\nProduction and assembly lines are also available worldwide if we needed to outsource or increase our capacity, though we intend to complete\nour assembly in our Ontario, California facility.\n 13 \n Manufacturing and Assembly \n We "
+  },
+  {
+   "names": [
+    "CPI Card Group Inc.  (PMTS)  (CIK 0001641614)"
+   ],
+   "cik": 1641614,
+   "accession": "0001104659-26-023812",
+   "file": "pmts-20251231x10k.htm",
+   "filed": "2026-03-05",
+   "in_competition_section": false,
+   "context": "ort from them. However, certain components are only available from a single supplier, or substituting a component from a different supplier may require additional time and investment. Some of the most important components of our products include the microchips and antennas for our card products. Our main suppliers of microchips and antennas include three leading international producers with locations in Germany, Thailand, and Singapore, some of which source materials from Taiwan. For the year en"
+  },
+  {
+   "names": [
+    "Astera Labs, Inc.  (ALAB)  (CIK 0001736297)"
+   ],
+   "cik": 1736297,
+   "accession": "0001736297-26-000010",
+   "file": "alab-20251231.htm",
+   "filed": "2026-02-20",
+   "in_competition_section": true,
+   "context": "or cloud and AI infrastructure workloads. Our competitors typically compete with us with respect to some, but not all, of our solutions. Our principal competitors include Broadcom, Inc., Credo Technology Group Holding Ltd., Marvell Technology, Inc., Microchip Technology Inc., Montage Technology, Parade Technologies, Ltd., and Rambus, Inc. \n The principal competitive factors in our market include: \n • Ability to provide a complete platform coupled with software and interoperability reports that e"
+  },
+  {
+   "names": [
+    "SITIME Corp  (SITM)  (CIK 0001451809)"
+   ],
+   "cik": 1451809,
+   "accession": "0001451809-26-000012",
+   "file": "sitm-20251231.htm",
+   "filed": "2026-02-11",
+   "in_competition_section": true,
+   "context": "offering a wide range of timing products to smaller companies specializing in narrow market verticals. Companies that we primarily compete with include, but are not limited to, Abracon, LLC, Daishinku Corp., Diodes Incorporated, Kyocera Corporation, Microchip Technology Inc., Murata Manufacturing Co., Ltd, Nihon Dempa Kogoyo., Ltd., Rakon Limited, Renesas Electronics Corporation, Seiko Epson Corporation, Skyworks Solutions, Inc., Texas Instruments Incorporated, and TXC Corporation. \n Our ability"
+  },
+  {
+   "names": [
+    "Ambiq Micro, Inc.  (AMBQ)  (CIK 0001500412)"
+   ],
+   "cik": 1500412,
+   "accession": "0001193125-26-094004",
+   "file": "ambq-20251231.htm",
+   "filed": "2026-03-05",
+   "in_competition_section": true,
+   "context": "r, the disadvantages we face include our relatively short operating history in certain of our markets and our smaller size and customer base relative to many of our competitors. \n Today, we generally compete with large MCU vendors, such as Infineon, Microchip, NXP, Silicon Laboratories, STMicroelectronics, Texas Instruments, and others. In addition, we also compete with connectivity players such as Nordic Semiconductor, Renesas and Synaptics. In addition, we sometimes compete (and other times wo"
+  },
+  {
+   "names": [
+    "FREQUENCY ELECTRONICS INC  (FEIM)  (CIK 0000039020)"
+   ],
+   "cik": 39020,
+   "accession": "0001185185-26-002997",
+   "file": "feim10k043026.htm",
+   "filed": "2026-07-17",
+   "in_competition_section": false,
+   "context": "With respect\nto non-space products, such as systems for precision time for terrestrial secure communication and command and control, and products\nfor multiple applications in the EW market, the Company competes with larger domestic companies such as Microchip Technology Incorporated\nand Mercury Systems, Inc. \n The\nCompany believes its ability to obtain raw materials, manufacture finished products, integrate them into systems and sub-systems and\ninterface these systems with highly sophisticated e"
+  },
+  {
+   "names": [
+    "ONE STOP SYSTEMS, INC.  (OSS)  (CIK 0001394056)"
+   ],
+   "cik": 1394056,
+   "accession": "0001193125-26-114051",
+   "file": "oss-20251231.htm",
+   "filed": "2026-03-18",
+   "in_competition_section": false,
+   "context": " the leading edge of technology is enhanced by our strong relationships with strategic component manufacturers, including NVIDIA (for GPUs, ARM processors and networking), NetList and Micron (for flash memory), Broadcom (for PCIe switch components), Microchip (for vehicle rated switch and functional safety processors), and Intel and AMD (for CPUs). In many cases, we have access to product roadmaps and other technical information relating to future technology. Access to this information allows us"
+  },
+  {
+   "names": [
+    "Infleqtion, Inc.  (INFQ, INFQ-WT)  (CIK 0002007825)"
+   ],
+   "cik": 2007825,
+   "accession": "0001193125-26-134544",
+   "file": "d94946d10k.htm",
+   "filed": "2026-03-31",
+   "in_competition_section": true,
+   "context": "le to jamming or spoofing, limited by antenna size, and often struggle in non-line-of-sight or denied environments. In the timing market, Infleqtion competes with incumbent suppliers of atomic clocks and time synchronization solutions. These include Microchip Technology, SiTime, Safran Electronics & Defense and Oscilloquartz, which offer atomic clocks, rubidium standards and GPS-disciplined oscillators. These traditional solutions are widely deployed in telecommunications, defense and aerospace "
+  },
+  {
+   "names": [
+    "EVERSPIN TECHNOLOGIES INC.  (MRAM)  (CIK 0001438423)"
+   ],
+   "cik": 1438423,
+   "accession": "0001628280-26-014733",
+   "file": "mram-20251231.htm",
+   "filed": "2026-03-04",
+   "in_competition_section": true,
+   "context": " other memory technology manufacturers. \n Our principal competitors to our Toggle MRAM products include companies that offer nonvolatile SRAM (NVSRAM), SRAM, and FRAM products, such as Infineon, Fujitsu, Integrated Silicon Solution (ISSI), Macronix, Microchip, Micron, Renesas, Samsung and Toshiba. Our STT-MRAM products replace discrete NOR, DRAM and NVSRAM where persistence is required and thus compete with DRAM and NVSRAM suppliers such as Hynix, Micron, Winbond, Samsung, and several other smal"
+  },
+  {
+   "names": [
+    "GBT Technologies Inc.  (GTCH)  (CIK 0001471781)"
+   ],
+   "cik": 1471781,
+   "accession": "0001731122-26-000573",
+   "file": "e7549_10-k.htm",
+   "filed": "2026-04-15",
+   "in_competition_section": false,
+   "context": "eate detailed 2D and\n3D images.\n Recent Developments \n Due to litigation with Discover\nFund, in April 2020, GBT was forced to make the decision of changing the Company’s direction by developing a portfolio of intellectual\nproperty within the area of microchips technology and design. The years 2019 and 2020 were compounded with recuring legal issues and COVID-19\nrestrictions creating extremely difficult times and challenges. GBT focused on its core competency in the area of Research & Development"
+  },
+  {
+   "names": [
+    "MAXLINEAR, INC  (MXL)  (CIK 0001288469)"
+   ],
+   "cik": 1288469,
+   "accession": "0001288469-26-000011",
+   "file": "mxl-20251231.htm",
+   "filed": "2026-01-29",
+   "in_competition_section": true,
+   "context": "Semiconductor Corp., Skyworks Solutions, Inc., Credo Semiconductor Inc., MediaTek, Inc., Marvell Technology Group Ltd., MACOM Technology Solutions Holdings, Inc., Texas Instruments Incorporated, Analog Devices, Inc., Renesas Electronics Corporation, Microchip Technology Inc. and Semtech Corporation. Because our products often are building block semiconductors which provide functions that in some cases can be integrated into more complex integrated circuits, we also face competition from manufact"
+  },
+  {
+   "names": [
+    "Sphere 3D Corp.  (ANY)  (CIK 0001591956)"
+   ],
+   "cik": 1591956,
+   "accession": "0001591956-26-000004",
+   "file": "any-20251231.htm",
+   "filed": "2026-03-27",
+   "in_competition_section": false,
+   "context": "f the device. The production of ASIC chips typically requires highly sophisticated silicon wafers, which currently only a small number of fabrication facilities, or wafer foundries, in the world are capable of producing. We believe that the previous microchip shortage that the entire industry experienced lead to price fluctuations and disruption in the supply of key miner components. Specifically, the ASIC chips have recently been subject to a significant price increases and shortages. \n We do n"
+  },
+  {
+   "names": [
+    "TRANSACT TECHNOLOGIES INC  (TACT)  (CIK 0001017303)"
+   ],
+   "cik": 1017303,
+   "accession": "0001140361-26-009238",
+   "file": "ef20064326_10k.htm",
+   "filed": "2026-03-12",
+   "in_competition_section": false,
+   "context": "uaranteed supply contracts with any of\n our component suppliers, and our suppliers could delay shipments, increase prices or cease manufacturing or selling such components to us at any time, as occurred as a result of such as the shortages in global microchip availability we experienced\n during much of 2022 and 2023. These disruptions resulted in delays in delivery of products to customers and similar disruptions in the future could result in additional delays, even if we are able to source comp"
+  },
+  {
+   "names": [
+    "VPR Brands, LP.  (VPRB)  (CIK 0001376231)"
+   ],
+   "cik": 1376231,
+   "accession": "0001213900-26-037425",
+   "file": "ea0283694-10k_vprbrands.htm",
+   "filed": "2026-03-31",
+   "in_competition_section": false,
+   "context": "hich is a small plastic cartridge that contains a liquid nicotine solution; \n ● \n The heating element that vaporizes the liquid nicotine so that it can be inhaled; and \n ● \n The electronics, which include: a lithium-ion battery, an airflow sensor, a microchip controller and an LED, which illuminates to indicate use. \n When a user draws air through the electronic cigarette,\nthe air flow is detected by a sensor, which activates a heating element that vaporizes the solution stored in the mouthpiece"
+  },
+  {
+   "names": [
+    "IMPINJ INC  (PI)  (CIK 0001114995)"
+   ],
+   "cik": 1114995,
+   "accession": "0001193125-26-042813",
+   "file": "pi-20251231.htm",
+   "filed": "2026-02-09",
+   "in_competition_section": false,
+   "context": ". The patent expires on July 17, 2026 and does not have renewal rights. This patent is included in our intangible assets on our consolidated balance sheet as of December 31, 2025. \n On December 22, 2025, we signed a goods and services agreement with Microchip Technology Incorporated, of which a member of our board of directors holds both an executive leadership and board of directors position. No transactions have occurred under this agreement as of December 31, 2025. \n Note 17. Retirement Plans"
+  }
+ ]
+}

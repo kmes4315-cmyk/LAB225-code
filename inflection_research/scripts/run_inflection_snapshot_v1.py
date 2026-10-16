@@ -195,9 +195,11 @@ def code_version() -> str:
 def data_version(cache: Path) -> tuple[str, int]:
     latest = {}
     log = cache / "fetch_log.jsonl"
+    screen_inputs = ("sec/company_tickers_exchange", "sec/submissions/", "sec/companyfacts/", "sec/fsds/", "yahoo/chart/")
     for line in log.read_text().splitlines():
         rec = json.loads(line)
-        latest[rec["key"]] = rec["sha256"]
+        if rec["key"].startswith(screen_inputs):  # 10-K text for competitor cards is not a screen input
+            latest[rec["key"]] = rec["sha256"]
     h = hashlib.sha256()
     for k in sorted(latest):
         h.update(f"{k}:{latest[k]}\n".encode())
@@ -210,6 +212,8 @@ def main():
     ap.add_argument("--out", default=str(ROOT / "data/prospective/inflection_v1"))
     ap.add_argument("--period", default=None)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--supersedes", default=None, help="period id this record corrects (the old record stays)")
+    ap.add_argument("--reason", default="")
     args = ap.parse_args()
     cache = Path(args.cache)
 
@@ -218,6 +222,8 @@ def main():
     decision_time = inf.utc(cfg["timing"]["decision_time_utc"])
     price_date = date.fromisoformat(cfg["timing"]["price_date"])
     period = args.period or decision_time.date().isoformat()
+    if args.supersedes and not args.period:
+        period = f"{args.supersedes}-r1"
     listed = set(cfg["universe"]["exchanges"])
     ucfg = cfg["universe"]
 
@@ -257,6 +263,7 @@ def main():
         chart = load_gz_json(cache / f"yahoo/chart/{uni.yahoo_symbol(ticker)}.json.gz")
         bars, splits = uni.chart_bars(chart or {})
         px = uni.price_on(bars, price_date)
+        non_common = uni.non_common_reason(*uni.yahoo_meta(chart or {}))
 
         shares, shares_asof, shares_note = (None, None, "")
         if facts:
@@ -277,7 +284,9 @@ def main():
         in_band = mcap is not None and ucfg["market_cap_min_usd"] <= mcap <= ucfg["market_cap_max_usd"]
         financial = uni.is_excluded_industry(sic, ucfg["excluded_sic_ranges"])
 
-        if mcap is None:
+        if non_common:
+            scope = f"排除：{non_common}"
+        elif mcap is None:
             scope = "缺市值"
         elif not in_band:
             scope = "市值區間外"
@@ -311,12 +320,16 @@ def main():
             "median_dollar_volume_20d": uni.median_dollar_volume(bars, price_date) if bars else None,
             "return_6m": ret6,
             "excess_return_6m": (ret6 - spy_ret) if ret6 is not None and spy_ret is not None else None,
-            "in_cap_band": in_band,
+            "in_cap_band": in_band and not non_common,
             "scope": scope,
         }
         universe_rows.append(row)
         if scope == "篩選":
             res = screen_company(facts, accepts, decision_time, cfg)
+            g1 = res.get("g1")
+            if g1 is not None and g1.status == inf.FAIL and "非美元" not in g1.detail and not uni.is_new_listing(sub, decision_time):
+                # an older registrant with too few comparable quarters has a data problem, not a new listing
+                res["g1"] = inf.GateResult(inf.NA, g1.value, g1.detail + "（非新上市：口徑變動或期間不連續）")
             screened.append((row, res))
 
     # Relative strength percentile within the screened universe (label only).
@@ -407,7 +420,17 @@ def main():
             d["group_rank"] = i + 1
     cand_rows.sort(key=lambda d: (d["source_quadrant"], d["group_rank"]))
 
-    changes = [{"ticker": d["ticker"], "change": "新進", "state": "入選", "detail": d["source_quadrant"]} for d in cand_rows]
+    prev_cands = set()
+    if args.supersedes:
+        prev_path = Path(args.out) / args.supersedes / "candidates.csv"
+        prev_cands = {r["ticker"] for r in csv.DictReader(io.StringIO(prev_path.read_text()))}
+    if args.supersedes:
+        now = {d["ticker"] for d in cand_rows}
+        changes = [{"ticker": t, "change": "修正後新進", "state": "入選", "detail": ""} for t in sorted(now - prev_cands)]
+        changes += [{"ticker": t, "change": "修正後移出", "state": "", "detail": ""} for t in sorted(prev_cands - now)]
+    else:
+        changes = [{"ticker": d["ticker"], "change": "新進", "state": "入選", "detail": d["source_quadrant"]}
+                   for d in cand_rows]
     tracking = [
         {"ticker": d["ticker"], "cik": d["cik"], "entry_date": period, "state": "入選", "entry_price": d["price"],
          "entry_price_date": d["price_date_used"], "next_report_expected": d["next_report_expected"]}
@@ -454,6 +477,8 @@ def main():
         "data_sha256": dv,
         "data_objects": n_objects,
         "spy_return_6m": spy_ret,
+        "supersedes": args.supersedes,
+        "correction_reason": args.reason,
         "fsds_quarters": FSDS_QUARTERS,
         "companies_supplemented_from_fsds": supplemented,
         "counts": {

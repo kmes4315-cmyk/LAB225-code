@@ -256,3 +256,15 @@ def test_restated_cumulative_not_mixed_with_old_annual():
     # without the restatement the same quarter is derived normally
     per2 = inf.latest_by_period(entries[:1] + entries[2:], DT)
     assert inf.quarterly_from_periods(per2)[date(2025, 9, 30)].val == 650
+
+
+def test_non_common_and_new_listing():
+    assert uni.non_common_reason("ETF", "SPDR Gold") is not None
+    assert uni.non_common_reason("EQUITY", "Entergy Arkansas, Inc. 1M BD 4.875%66") is not None
+    assert uni.non_common_reason("EQUITY", "MACOM Technology Solutions Holdings, Inc.") is None
+    old = {"filings": {"recent": {"form": ["10-K"], "filingDate": ["2015-03-01"]}, "files": []}}
+    new = {"filings": {"recent": {"form": ["10-Q"], "filingDate": ["2026-05-01"]}, "files": []}}
+    paged = {"filings": {"recent": {"form": ["10-Q"], "filingDate": ["2026-05-01"]}, "files": [{"name": "x"}]}}
+    assert not uni.is_new_listing(old, DT)
+    assert uni.is_new_listing(new, DT)
+    assert not uni.is_new_listing(paged, DT)

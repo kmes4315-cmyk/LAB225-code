@@ -119,3 +119,40 @@ def split_factor_after(splits, after: date, upto: date) -> float:
         if after < sd <= upto:
             f *= ratio
     return f
+
+
+DEBT_NAME = re.compile(r"\d+(\.\d+)?\s*%|\b(BD|NT|NTS|Notes?|Debentures?|Bonds?)\b", re.I)
+
+
+def yahoo_meta(chart: dict) -> tuple[str | None, str]:
+    res = (chart.get("chart") or {}).get("result") or []
+    if not res:
+        return None, ""
+    m = res[0].get("meta", {})
+    return m.get("instrumentType"), m.get("longName") or m.get("shortName") or ""
+
+
+def non_common_reason(instrument_type: str | None, long_name: str) -> str | None:
+    if instrument_type and instrument_type != "EQUITY":
+        return f"非普通股（{instrument_type}）"
+    if long_name and DEBT_NAME.search(long_name):
+        return "非普通股（債券／票據）"
+    return None
+
+
+def first_periodic_filing(sub: dict) -> date | None:
+    """Earliest 10-K/10-Q/20-F/40-F in the filing history; None if the history is long (paged)."""
+    filings = sub.get("filings", {})
+    if filings.get("files"):
+        return None
+    r = filings.get("recent", {})
+    dates = [parse_date(d) for f, d in zip(r.get("form", []), r.get("filingDate", []))
+             if d and f in ("10-K", "10-Q", "20-F", "40-F", "10-KT", "10-K405")]
+    return min(dates) if dates else None
+
+
+def is_new_listing(sub: dict, decision_time: datetime, years: int = 3) -> bool:
+    if sub.get("filings", {}).get("files"):
+        return False
+    first = first_periodic_filing(sub)
+    return first is None or first >= decision_time.date() - timedelta(days=365 * years)

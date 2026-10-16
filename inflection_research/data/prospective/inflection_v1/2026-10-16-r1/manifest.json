@@ -1,0 +1,33 @@
+{
+  "code_sha256": "489715465071b98f042edbb13d71b5d8502b551c43fa7f08cbfe4f4a1edd428c",
+  "companies_supplemented_from_fsds": 172,
+  "config_sha256": "e982056bba69c2e52162249fdc08d8939ac5d036028f08821fd30a4e14e4d586",
+  "correction_reason": "母體修正：排除被 SEC 列為營運公司的 ETF／商品信託（99）與掛牌債券（10）；觀察名單只收新上市公司，舊公司因口徑變動或期間不連續改列資料不足。門檻、決策時間與候選名單不變。",
+  "counts": {
+    "candidates": 18,
+    "in_cap_band": 2174,
+    "listed_operating": 4526,
+    "screened": 1660,
+    "watchlist": 55
+  },
+  "data_objects": 15309,
+  "data_sha256": "4d5990e94ee2ccca1bff5b8586cee33f84766144b64d09e88a3246fa0cdeee91",
+  "decision_time_utc": "2026-10-16T14:30:00Z",
+  "files": {
+    "candidates.csv": "29e23ffc91161f7acc1700d38a6932a8f6b9b78f4627e38e457860ba160d8603",
+    "changes.csv": "322740ac1aeb6f1dc6e6a6a21867b455ec943efe995ef2738b610eea36124858",
+    "gate_details.csv": "fd9cf9e642afb264f59c50911ab36cb39e88d9118ea583ee51d01d802ee8f672",
+    "quarterly_inputs.csv.gz": "70da6d9a62ef584e110661ffb12e5624b0242fa3829142ec5c0b26da96a96a4f",
+    "tracking.csv": "62647a219ffbb9339017dba8972c552352a7d998adb3d24bdd2c24487bb711b9",
+    "universe_snapshot.csv": "d2c97a68c407435725068f7e35dff84dde2ce9f883f90b0c9501cad40abc5448",
+    "watchlist.csv": "e74af8aaca349ef17c95384162559573ba69f9252198baf6910de713813aa28a"
+  },
+  "fsds_quarters": [
+    "2026q2",
+    "2026q3"
+  ],
+  "period": "2026-10-16-r1",
+  "price_date": "2026-10-15",
+  "spy_return_6m": 0.1026516206179433,
+  "supersedes": "2026-10-16"
+}

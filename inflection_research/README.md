@@ -16,6 +16,8 @@
 | `scripts/fetch_prices_v1.py` | 抓 Yahoo 日線（收盤、成交量、分割） |
 | `scripts/run_inflection_snapshot_v1.py` | 產生季度快照並寫入 `data/prospective/inflection_v1/` |
 | `scripts/extract_competition_v1.py` | 競爭地圖卡素材：10-K Competition 段落與反查點名 |
+| `scripts/peer_metrics_v1.py` | 競爭地圖卡的規模對照（任何 SEC 上市公司） |
+| `src/pit_rotation/fsds.py` | XBRL API 缺的申報，用 SEC 季度財報資料集補 |
 | `tests/test_inflection_research.py` | 驗收測試 |
 
 ## 執行
@@ -29,3 +31,10 @@ python -m pytest -q tests
 ```
 
 同一份快取重跑，輸出檔逐位元相同（manifest 只記決策時間、設定／程式／資料的雜湊，不記執行時間）。
+
+## 第一期結果
+
+- 報告：`docs/first_period_2026-10-16.md`
+- 正式紀錄：`data/prospective/inflection_v1/2026-10-16-r1/`（修正並取代 `2026-10-16`，兩者都保留）
+- 競爭地圖卡：`data/inflection/competitor_cards_v1/2026-10-16/cards.md`
+- 原始資料下載紀錄（SHA-256）：`data/provenance/`

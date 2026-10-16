@@ -1,0 +1,133 @@
+{
+ "ticker": "LSCC",
+ "cik": 855658,
+ "name": "LATTICE SEMICONDUCTOR CORP",
+ "tenk_url": "https://www.sec.gov/Archives/edgar/data/855658/000143774926004100/lscc20260103_10k.htm",
+ "tenk_accepted": "2026-02-14T02:03:51.000Z",
+ "business_intro": "\n Item 1. Business \n Overview \n Lattice Semiconductor Corporation and its subsidiaries (“Lattice,” the “Company,” “we,” “us,” or “our”) develop technologies that we monetize through differentiated programmable logic semiconductor products, silicon-enabling products, system solutions, design services, and technology licenses. Lattice is the low power programmable leader. We solve customer problems across the network, from the Edge to the Cloud, in the Communications, Computing, Industrial, Automotive, and Consumer markets. Our technology, long-standing relationships, and commitment to world-class support lets our customers quickly and easily unleash their innovation to create a smart, secure, and connected world.\n Our field programmable gate array (\"FPGA\") devices enable us to provide our customers with a strong, growing base of control, connect, and compute technologies. We believe there are multiple growth areas that will allow us to increase our addressable market. In particular, we believe there are several emerging trends in servers, infrastructure, and smart devices that are opportunities for Lattice:\n ● \n With the growth of hyperscale data centers, our “processor agnostic” solutions are ideal for dataplane, control, and connect functions in enterprise and data center server applications.\n ● \n With the continued data center network expansion, as well as continued Communications infrastructure build-out from 5G deployment and beyond, Lattice solutions are being adopted to control and connect a variety of functions in critical systems.\n ● \n Vision and intelligence in systems are increasing electrification and the proliferation of sensors in smart factories, smart homes, and automobiles. Our low power, small form factor solutions are ideal for systems and sensor applications.\n ● \n With the increase in artificial intelligence (\"AI\") and a multitude of applications at the network edge, Lattice devices support applications like face detection, image recognition, human-machine interface (\"HMI\"), and video analytics.\n ● \n With the demand for more hardware security in the Communications, Computing, Industrial, Automotive, and Consumer markets, our devices provide enhanced platform security enabling post-quantum algorithms.\n In addition, the FPGA market is continuing to grow in importance to the overall semiconductor market, driven by five secular trends acting as tailwinds. Lattice is uniquely positioned to address these trends.\n ● \n AI is driving shorter design cycles, allowing less time to integrate auxiliary functions.\n ● \n As application specific integrated circuit (“ASIC”) and application specific standard part (\"ASSP\") development costs continue to increase, allocating more functions to FPGAs improves the Return on Investment on ASICs and ASSPs and drives more designs for FPGAs.\n ● \n As the cost of advanced nodes increase, mature process FPGAs are more economical to perform certain functions.\n ● \n Emerging applications like security have fast-changing requirements. A perfect example is Post Quantum Cryptography (\"PQC\") for which FPGA programmability offers more adaptable solutions than fixed-function ASICs that can’t easily be redesigned.\n ● \n Edge AI requires contextual intelligence near the sensor. In these applications, Lattice’s “far-edge” FPGAs can offload processing and enable the “near-edge” inference chip to focus on other tasks. Lattice FPGAs are already in these sockets today performing other functions, which gives Lattice a competitive advantage with customers.\n The small and mid‑range FPGA segments are growing faster than the overall FPGA market, led by new applications in data centers and cloud, robotics, industrial automation, autonomous vehicles, electrification, IoT, telematics, aerospace and defense, and AI across these segments. These applications have driven a rapid expansion of sensors, which require massive amounts of data to be bridged, aggregated, and fused to upstream processing units. Lattice has an existing foothold in these markets today, and our goal is to be the market leader in the growing far‑edge AI segment. This is one of several catalysts that increase our confidence in Lattice’s long‑term growth opportunities as we continue to execute our strategy.\n Our Markets and Customers \n We sell our products globally in three end market groups: Communications and Computing, Industrial and Automotive, and Consumer. We also provide Intellectual Property (\"IP\") licensing and services to these end markets.\n In the Communications and Computing Market , our solutions can be used as primary processors or as FPGA companion chips to AI and processing applications, playing key roles in computing systems such as servers and client devices, 5G wireless infrastructure, switches, routers, and other related applications.\n 3\n Table of Contents \n Our Communications and Computing customers need to address a variety of challenges.\n ● \n As server architectures become increasingly complex, customers need simplified control logic, enhanced hardware platform security, system status monitoring, and rigorous power and thermal management.\n ● \n Networks typically require progressively higher bandwidth and increased reliability as more data is demanded by connected devices, and increasingly require more security as providers embrace disaggregation and openness with the adoption of open radio access networks (\"ORAN\").\n ● \n As wireless cellular sites become more compact, there is a growing requirement for smaller form factors optimized for low power consumption and thermal management.\n Lattice FPGAs help solve these customer problems. Our FPGAs are optimized for input/output (\"I/O\") expansion, hardware acceleration, “first-on, last-off” hardware security, and hardware management. Our FPGAs consume power at very low rates, which reduces operating costs. Their small form factor enables higher functional density in less space. Finally, our FPGAs are I/O rich, which allows for more connections w",
+ "competition": [],
+ "reverse_mention_query": "Lattice Semiconductor",
+ "reverse_mentions": [
+  {
+   "names": [
+    "KULICKE & SOFFA INDUSTRIES INC  (KLIC)  (CIK 0000056978)"
+   ],
+   "cik": 56978,
+   "accession": "0000056978-25-000081",
+   "file": "a6ex1015formofexecutivepsu.htm",
+   "filed": "2025-11-20",
+   "in_competition_section": false,
+   "context": "onductor, Inc. Silicon Motion Technology Corporation \n Intchains Group Limited SiTime Corporation \n Intel Corporation SkyWater Technology, Inc. \n JinkoSolar Holding Co., Ltd. Skyworks Solutions, Inc. \n Kopin Corporation SMART Global Holdings, Inc. \n Lattice Semiconductor Corporation SPI Energy Co., Ltd. \n MACOM Technology Solutions Holdings, Inc. Synaptics Incorporated \n Magnachip Semiconductor Corporation Texas Instruments Incorporated \n Marvell Technology, Inc. Tower Semiconductor Ltd. \n Maxeo"
+  },
+  {
+   "names": [
+    "Navitas Semiconductor Corp  (NVTS)  (CIK 0001821769)"
+   ],
+   "cik": 1821769,
+   "accession": "0001104659-26-052971",
+   "file": "nvts-20251231x10ka.htm",
+   "filed": "2026-04-30",
+   "in_competition_section": false,
+   "context": "l Movidius since 2013, Quixey since 2012 and Hedvig Inc. since 2013. Previous investment and board seats include Maginatics, Inc. (now part of EMC), Ozmo Devices (now part of Atmel), BridgCo (now part of SMSC), Silicon Blue Technologies (now part of Lattice Semiconductor) and Osmetta Inc. (now part of Facebook). Mr. Long holds a Master’s in Electronic Engineering from Trinity College, Dublin.\n We believe Mr. Long is qualified to serve on the Board based on his experience as a board member of tec"
+  },
+  {
+   "names": [
+    "COHERENT CORP.  (COHR)  (CIK 0000820318)"
+   ],
+   "cik": 820318,
+   "accession": "0000820318-26-000020",
+   "file": "iivi-20260630.htm",
+   "filed": "2026-08-14",
+   "in_competition_section": false,
+   "context": "une 3, 2024. He brings over 25 years of experience in the technology and semiconductor industries, with a strong track record in innovation-driven businesses. Prior to joining Coherent, Mr. Anderson served as President and Chief Executive Officer of Lattice Semiconductor Corporation from September 2018 to 2024. Before Lattice, he was Senior Vice President and General Manager of the Computing and Graphics Business Group at Advanced Micro Devices, Inc. (AMD). Earlier in his career, he held various"
+  },
+  {
+   "names": [
+    "CXApp Inc.  (CXAI, CXAIW)  (CIK 0001820875)"
+   ],
+   "cik": 1820875,
+   "accession": "0001829126-26-002840",
+   "file": "cxappinc_10k.htm",
+   "filed": "2026-03-30",
+   "in_competition_section": false,
+   "context": "alization, and artificial intelligence. Prior to Kwikbit, in 2014, Mr. Sheikh was appointed as the Chief Strategy and Technology Officer for Silicon Image (SIMG) and the President/CEO of its millimeter wave/5G subsidiary SiBEAM. SIMG was acquired by Lattice Semiconductor (Nasdaq:LSCC) in 2015 for $600 million after which Mr. Sheikh was appointed the Chief Strategy and Technology Officer of the combined company responsible for corporate strategy, roadmap, M&A and technology development and was th"
+  },
+  {
+   "names": [
+    "GREENBRIER COMPANIES INC  (GBX)  (CIK 0000923120)"
+   ],
+   "cik": 923120,
+   "accession": "0001193125-25-253612",
+   "file": "gbx-20250831.htm",
+   "filed": "2025-10-28",
+   "in_competition_section": false,
+   "context": "nt, Chief Human Resources Officer, a position she has held since November 2020. Ms. Dornan has served in various human resources leadership positions since joining the Company in 2014. Prior to Greenbrier, she served in various leadership roles with Lattice Semiconductor Corporation, Nautilus, Inc. and Electro Scientific Industries. \n William Glenn , 64, is Senior Vice President and President, Europe, a position he has held since January 2024. Prior to this role, Mr. Glenn served as the Chair of"
+  },
+  {
+   "names": [
+    "LAM RESEARCH CORP  (LRCX)  (CIK 0000707549)"
+   ],
+   "cik": 707549,
+   "accession": "0000707549-26-000037",
+   "file": "lrcx-20260628.htm",
+   "filed": "2026-08-07",
+   "in_competition_section": false,
+   "context": " at Intel Corporation from 1993 to 2004, where he held several senior-level finance positions, including corporate planning and reporting controller and Malaysia site operations controller. Mr. Bettinger currently serves on the Board of Directors of Lattice Semiconductor Corporation and the Industrial Advisory Board of the University of Wisconsin College of Engineering and from 2018 to 2025, he served on the SEMI Board of Industry Leaders. Mr. Bettinger earned an M.B.A. degree in finance from th"
+  },
+  {
+   "names": [
+    "MAGNACHIP SEMICONDUCTOR Corp  (MX)  (CIK 0001325702)"
+   ],
+   "cik": 1325702,
+   "accession": "0001193125-26-108435",
+   "file": "mx-20251231.htm",
+   "filed": "2026-03-16",
+   "in_competition_section": false,
+   "context": "Martino previously served as a director of Cypress Semiconductor from 2017 through to 2020, a director of Sensera from 2018 to 2024, and was also the Chief Executive Officer of Silicon Image Inc. from January 2010 until the completion of its sale to Lattice Semiconductor Corporation in March 2015. From 2008 to 2009, Mr. Martino served as Chief Operating Officer of SAI Technology Inc., where he also served as a director from 2006 to 2010. From 2005 to 2007, Mr. Martino served as a director, the P"
+  },
+  {
+   "names": [
+    "ADVANCED MICRO DEVICES INC  (AMD)  (CIK 0000002488)"
+   ],
+   "cik": 2488,
+   "accession": "0000002488-26-000018",
+   "file": "amd-20251227.htm",
+   "filed": "2026-02-04",
+   "in_competition_section": true,
+   "context": "users at a lower cost. We are the market share leader in semi-custom game console products, where graphics performance is critical. \n Competition in Embedded Segment \n We expect continued competition from our primary FPGA competitors such as Altera, Lattice Semiconductor Corporation and Microsemi Corporation, and from ASSP vendors such as Broadcom Corporation, Marvell Technology Group, Ltd., Analog Devices, Texas Instruments Incorporated, NXP Semiconductors N.V., Qualcomm Incorporated and NVIDIA"
+  },
+  {
+   "names": [
+    "QUICKLOGIC Corp  (QUIK)  (CIK 0000882508)"
+   ],
+   "cik": 882508,
+   "accession": "0001437749-26-010089",
+   "file": "quicklo20251208_10k.htm",
+   "filed": "2026-03-27",
+   "in_competition_section": true,
+   "context": "tion into ASICs and SoC devices. These competitors may include both established semiconductor companies and smaller venture-backed companies.\n In the market for discrete FPGA devices, we compete with suppliers of programmable logic devices including Lattice Semiconductor Corporation, Microchip Technology Inc. (which acquired Microsemi Corporation), Advanced Micro Devices, Inc. (which acquired Xilinx, Inc.), and Intel Corporation (whose programmable logic business operates under the Altera brand)"
+  },
+  {
+   "names": [
+    "MiniMed Group, Inc.  (MMED)  (CIK 0002062583)"
+   ],
+   "cik": 2062583,
+   "accession": "0001628280-26-045915",
+   "file": "mdt-20260424.htm",
+   "filed": "2026-06-29",
+   "in_competition_section": false,
+   "context": "Vice President and Chief Commercial Officer of Honeywell. Before joining Honeywell in 2017, Ms. Dallara worked at TE Connectivity, Microsoft, itv|world, Telstra Corporation, and McKinsey & Company. Ms. Dallara has served on the board of directors of Lattice Semiconductor Corporation (Nasdaq: LSCC) since November 2023. Ms. Dallara holds a BSc. in Applied Mathematics (Honours Class 1) and BCom from the University of New South Wales and an MBA from INSEAD in France. \n Chad Spooner has served as Exe"
+  },
+  {
+   "names": [
+    "Datavault AI Inc.  (DVLT)  (CIK 0001682149)"
+   ],
+   "cik": 1682149,
+   "accession": "0001104659-26-031280",
+   "file": "dvlt-20251231x10k.htm",
+   "filed": "2026-03-18",
+   "in_competition_section": false,
+   "context": "ties, standards development organizations, media companies, etc., to grow the business and protect the HDMI brand. Prior to joining HDMI Licensing Administrator Inc., Mr. Tobias served as President of HDMI Licensing LLC, a wholly owned subsidiary of Lattice Semiconductor, from September 2015 to December 2016, where he led the marketing, licensing and compliance teams promoting and licensing the HDMI intellectual property. Prior to this, he held the roles of President at MHL and Senior Director o"
+  }
+ ]
+}

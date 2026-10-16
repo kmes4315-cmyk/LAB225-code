@@ -1,0 +1,117 @@
+{
+ "ticker": "HCC",
+ "cik": 1691303,
+ "name": "WARRIOR MET COAL, INC.",
+ "tenk_url": "https://www.sec.gov/Archives/edgar/data/1691303/000119312526048914/hcc-20251231.htm",
+ "tenk_accepted": "2026-02-12T21:44:34.000Z",
+ "business_intro": "\n Item 1. \n Business \n 7 \n Item 1A. \n Risk Factors \n 26 \n Item 1B. \n Unresolved Staff Comments \n 66 \n Item 1C. \n Cybersecurity \n 67 \n Item 2. \n Properties \n 68 \n Item 3. \n Legal Proceedings \n 80 \n Item 4. \n Mine Safety Disclosures \n 80 \n Part II \n Item 5. \n Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities. \n 81 \n Item 6. \n [Reserved] \n 82 \n Item 7. \n Management’s Discussion and Analysis of Financial Condition and Results of Operations \n 83 \n Item 7A. \n Quantitative and Qualitative Disclosures About Market Risk \n 103 \n Item 8. \n Financial Statements and Supplementary Data \n 104 \n Item 9. \n Changes in and Disagreements with Accountants on Accounting and Financial Disclosure \n 104 \n Item 9A. \n Controls and Procedures \n 104 \n Item 9B. \n Other Information \n 105 \n Item 9C. \n Disclosure Regarding Foreign Jurisdictions that Prevent Inspections \n 105 \n Part III \n Item 10. \n Directors, Executive Officers and Corporate Governance \n 106 \n Item 11. \n Executive Compensation \n 106 \n Item 12. \n Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters \n 106 \n Item 13. \n Certain Relationships and Related Transactions, and Director Independence \n 106 \n Item 14. \n Principal Accounting Fees and Services \n 106 \n Part IV \n Item 15. \n Exhibits and Financial Statement Schedules \n 107 \n Item 16. \n Form 10-K Summary \n 111 \n Signatures \n 112 \n Index to Consolidated Financial Statements \n F- 1 \n i \n FORWARD-LOOKING STATEM ENTS \n This Annual Report on Form 10-K (this “Annual Report”) includes statements of our expectations, intentions, plans and beliefs that constitute “forward-looking statements” within the meaning of Section 27A of the Securities Act of 1933, as amended (the “Securities Act”), and Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), and are intended to come within the safe harbor protection provided by those sections. These statements, which involve risks and uncertainties, relate to analyses and other information that are based on forecasts of future results and estimates of amounts not yet determinable and may also relate to our future prospects, developments and business strategies. We have used the words “anticipate,” “approximately,” “assume,” “believe,” “could,” “contemplate,” “continue,” “estimate,” “expect,” “target,” “future,” “intend,” “may,” “plan,” “potential,” “predict,” “project,” “should” and similar terms and phrases, including in references to assumptions, in this Annual Report to identify forward-looking statements. These forward-looking statements are made based on expectations and beliefs concerning future events affecting us and are subject to uncertainties and factors relating to our operations and business environment, all of which are difficult to predict and many of which are beyond our control, that could cause our actual results to differ materially from those matters expressed in or implied by these forward-looking statements. These risks and uncertainties include, but are not limited to: \n • the impact of global pandemics, including its impact on our business, employees, suppliers and customers, the steelmaking coal and steel industries, and global economic markets; \n • the impacts of inflation on our business, including on our costs and our profitability; \n • our relationships with, and other conditions affecting, our customers; \n • successful implementation of our business strategies; \n • unavailability of, or price increases in, the transportation of our metallurgical (“met”) or steelmaking coal; \n • significant cost increases and fluctuations, and delay in the delivery of raw materials, mining equipment and purchased components; \n • work stoppages, negotiation of labor contracts, employee relations and workforce availability; \n • competition and foreign currency fluctuations; \n • litigation, including claims not yet asserted; \n • terrorist attacks or security threats, including cybersecurity threats; \n • global steel demand and the downstream impact on steelmaking coal prices; \n • impact of weather and natural disasters on demand and production; \n • a substantial or extended decline in pricing or demand for steelmaking coal; \n • inherent difficulties and challenges in the coal mining industry that are beyond our control; \n • our ability to develop or acquire steelmaking coal reserves in an economically feasible manner; \n • geologic, equipment, permitting, site access, operational risks and new technologies related to mining; \n • inaccuracies in our estimates of our steelmaking coal reserves; \n • costs associated with our workers’ compensation benefits; \n • challenges to our licenses, permits and other authorizations; \n • challenges associated with environmental, health and safety laws and regulations; \n 1 \n • regulatory requirements associated with federal, state and local regulatory agencies, and such agencies’ authority to order temporary or permanent closure of our mines; \n • climate change concerns and our operations’ impact on the environment; \n • failure to obtain or renew surety bonds on acceptable terms, which could affect our ability to secure reclamation and coal lease obligations; \n • our obligations surrounding reclamation and mine closure; \n • our substantial indebtedness and debt service requirements; \n • our ability to comply with covenants in our First Amendment to the Second Amended and Restated Credit Facility (the “Amended ABL Facility”) and the Indenture (as defined below); \n • adequate liquidity and the cost, availability and access to capital and financial markets; \n • our expectations regarding our future cash tax rate as well as our ability to effectively utilize our federal and state net operating loss carry forwards (“NOLs”); \n • our ability to continue paying our quarterly dividend or pay any special dividend; \n • the timing and amount of any stock repurchases we make under our stock repurchase program or otherw",
+ "competition": [
+  {
+   "start": 48800,
+   "end": 49587,
+   "text": "Competition \n Substantially all of our steelmaking coal sales are exported. Our major competitors sell into our core business areas of Asia, Europe and South America. We primarily compete with producers of premium steelmaking coal from Australia, Canada, Russia, Mozambique and the United States. The principal factors on which we compete are steelmaking coal prices at the port of delivery, coal quality and characteristics, customer relationships and the reliability of supply. The demand for our steelmaking coal is significantly dependent on the general global economy and the worldwide demand for steel. Although there are significant challenges in the current economy, we believe that we have competitive strengths in our business areas that provide us with distinct advantages."
+  }
+ ],
+ "reverse_mention_query": "Warrior Met Coal",
+ "reverse_mentions": [
+  {
+   "names": [
+    "PEABODY ENERGY CORP  (BTU)  (CIK 0001064728)"
+   ],
+   "cik": 1064728,
+   "accession": "0001064728-26-000006",
+   "file": "btu_20251231xex1065.htm",
+   "filed": "2026-02-19",
+   "in_competition_section": false,
+   "context": "tities \n Index / Ticker \n Company \n ARLP \n Alliance Resource \n AMR \n Alpha Metallurgical \n CNR \n Core Natural Resources \n CRN \n Coronado Global Resources \n HNRG \n Hallador Energy \n NHC \n New Hope Corporation \n METC \n Ramaco \n SOUHY \n South32 \n HCC \n Warrior Met Coal \n WHITF \n Whitehaven \n"
+  },
+  {
+   "names": [
+    "American Resources Corp  (AREC)  (CIK 0001590715)"
+   ],
+   "cik": 1590715,
+   "accession": "0001477932-26-003317",
+   "file": "arec_10k.htm",
+   "filed": "2026-05-20",
+   "in_competition_section": true,
+   "context": " important factors on which the Company competes are mineral quality, delivered costs to the customer and reliability of supply. Principal domestic competitors are MP Materials, Lithium Americas, Ramaco Resources, Arch Resources, Contura Energy, and Warrior Met Coal. Many of these coal producers may have greater financial resources and larger coal deposit bases than we do. We also compete in international markets directly with domestic companies and with companies that produce coal from one or m"
+  },
+  {
+   "names": [
+    "NATURAL RESOURCE PARTNERS LP  (NRP)  (CIK 0001171486)"
+   ],
+   "cik": 1171486,
+   "accession": "0001437749-26-006147",
+   "file": "nrp20251231_10k.htm",
+   "filed": "2026-02-27",
+   "in_competition_section": false,
+   "context": "fy Energy Corp. \n NACCO Industries, Inc. \n Talos Energy Inc. \n Berry Corporation \n Powell Industries, Inc. \n Vitesse Energy, Inc. \n Black Stone Minerals, L.P. \n Ramaco Resources, Inc. \n W&T Offshore, Inc. \n Centrus Energy Corp. \n Ring Energy, Inc. \n Warrior Met Coal, Inc. \n Great Lakes Dredge & Dock Corporation \n Sitio Royalties Corp. \n Meridian provides the CNG Committee with Peer Group data for comparison purposes, such as to compare equity and pay mix practices. Market pay levels are one of m"
+  },
+  {
+   "names": [
+    "Ramaco Resources, Inc.  (METC, METCB, METCI, METCZ)  (CIK 0001687187)"
+   ],
+   "cik": 1687187,
+   "accession": "0001104659-26-020479",
+   "file": "metc-20251231x10k.htm",
+   "filed": "2026-02-26",
+   "in_competition_section": true,
+   "context": "mpetition\n Our principal domestic coal competitors include Alpha Metallurgical Resources, Inc., Blackhawk Mining, LLC, Coronado Global Resources Inc., Arch Resources, Inc. (now a subsidiary of Core Natural Resources), Peabody Energy Corporation, and Warrior Met Coal, Inc. We also compete in international markets directly with domestic companies and with companies that produce coal from one or more foreign countries, such as Australia, Canada, and Colombia. Many of these coal producers are larger"
+  },
+  {
+   "names": [
+    "American Resources Corp  (AREC)  (CIK 0001590715)"
+   ],
+   "cik": 1590715,
+   "accession": "0001477932-25-007744",
+   "file": "arec_10ka.htm",
+   "filed": "2025-10-24",
+   "in_competition_section": true,
+   "context": "pany competes are coal quality, delivered costs to the customer and reliability of supply. Our principal domestic competitors will include Corsa Coal Corporation, Ramaco Resources, Blackhawk Mining, Coronado Coal, Arch Resources, Contura Energy, and Warrior Met Coal. Many of these coal producers may have greater financial resources and larger coal deposit bases than we do. We also compete in international markets directly with domestic companies and with companies that produce coal from one or m"
+  },
+  {
+   "names": [
+    "Ramaco Resources, Inc.  (METC, METCB, METCI, METCZ)  (CIK 0001687187)"
+   ],
+   "cik": 1687187,
+   "accession": "0001104659-26-086668",
+   "file": "metc-20251231x10ka.htm",
+   "filed": "2026-07-24",
+   "in_competition_section": true,
+   "context": "mpetition\n Our principal domestic coal competitors include Alpha Metallurgical Resources, Inc., Blackhawk Mining, LLC, Coronado Global Resources Inc., Arch Resources, Inc. (now a subsidiary of Core Natural Resources), Peabody Energy Corporation, and Warrior Met Coal, Inc. We also compete in international markets directly with domestic companies and with companies that produce coal from one or more foreign countries, such as Australia, Canada, and Colombia. Many of these coal producers are larger"
+  },
+  {
+   "names": [
+    "EVERTEC, Inc.  (EVTC)  (CIK 0001559865)"
+   ],
+   "cik": 1559865,
+   "accession": "0001559865-26-000012",
+   "file": "evtc-20251231.htm",
+   "filed": "2026-03-02",
+   "in_competition_section": false,
+   "context": "d Chief Accounting Officer until 1997 and as Executive Vice President and Chief Financial Officer from 1997 until his retirement in 2000. He is a former member of the Federal Accounting Standards Advisory Board, and currently serves as a director of Warrior Met Coal, Inc. (NYSE: HCC), and Albertsons Companies, Inc. (NYSE: ACI). Mr. Schumacher has substantial expertise in accounting, reporting, audit and financial matters and, as such, is able to provide valuable contributions to our Board in its"
+  },
+  {
+   "names": [
+    "Core Natural Resources, Inc.  (CNR)  (CIK 0001710366)"
+   ],
+   "cik": 1710366,
+   "accession": "0001710366-26-000007",
+   "file": "cnr-20251231.htm",
+   "filed": "2026-02-17",
+   "in_competition_section": false,
+   "context": "500 Stock Index. The peer group, for the purposes of the information presented below, is comprised of Alliance Resource Partners LP, Alpha Metallurgical Resources, Inc., Hallador Energy Company, Peabody Energy Corporation, Ramaco Resources, Inc. and Warrior Met Coal, Inc. Our peer group was updated for 2025 to remove Arch in light of the Merger with the Company in January 2025. \n The graph above assumes that the value of an initial investment in the Company’s common stock and each index was $100"
+  },
+  {
+   "names": [
+    "ALLIANCE RESOURCE PARTNERS LP  (ARLP)  (CIK 0001086600)"
+   ],
+   "cik": 1086600,
+   "accession": "0001104659-26-020468",
+   "file": "arlp-20251231x10k.htm",
+   "filed": "2026-02-26",
+   "in_competition_section": false,
+   "context": "d of the following companies: Alpha Metallurgical Resources, Inc., Black Stone Minerals, L.P., CORE Natural Resources, Inc., Dorchester Minerals, L.P., Kimbell Royalty Partners, LP, Natural Resource Partners L.P., Peabody, Sitio Royalties Corp., and Warrior Met Coal, Inc. In assessing the competitiveness of our executive compensation program for 2025, the Compensation Committee, with the assistance of the Chairman, President and CEO, collected and analyzed publicly available data from the peer g"
+  }
+ ]
+}
