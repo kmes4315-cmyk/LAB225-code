@@ -39,9 +39,10 @@ interpretations:
   annual_length_days: [350, 380]
   quarterly_derivation: "單季直接取；缺的單季用同一會計年度的累計數相減（6M-3M、9M-6M、FY-9M），科目或期間對不上就留白"
   value_vintage: "同一期間有多個申報版本時，取決策時間前最後收件的那一版"
+  restatement_rule: "某期數字被後來的申報改動超過 2% 視為重編；重編後的累計數不和未重編的數字相減（例如處分部門改列停業後的 9M 不和舊的年度數相減），該季留白"
   revenue_concept: "每家公司只用一個營收科目：在候選科目中挑最近一季有值者，同時有多個時取數值最大者"
   ttm_requires_contiguous_quarters: true
-  g4_operating_income: "用 OperatingIncomeLoss；公司沒有這個科目時，用營收 − CostsAndExpenses（同期間、同單位才算）"
+  g4_operating_income: "用 OperatingIncomeLoss；最新一季沒有這個科目時，改用營收 − CostsAndExpenses（同期間、同單位才算）"
   g4_turned_profitable: "TTM 營業利益現在 > 0，且 4 季前的 TTM 營業利益 <= 0"
   g5_improvement: "TTM 營業現金流 > 一年前的 TTM 營業現金流，或由負轉正"
   g6_shares: "最近一季稀釋加權股數 vs 去年同季；同一份申報裡的比較期優先（已調整分割）"

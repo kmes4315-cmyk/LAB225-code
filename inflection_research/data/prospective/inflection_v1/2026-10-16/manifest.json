@@ -1,0 +1,31 @@
+{
+  "code_sha256": "401427956b2b3807491edc3ecd54eacae867e15b2e8159b1367c2c60a35bbfc8",
+  "companies_supplemented_from_fsds": 172,
+  "config_sha256": "e982056bba69c2e52162249fdc08d8939ac5d036028f08821fd30a4e14e4d586",
+  "counts": {
+    "candidates": 18,
+    "in_cap_band": 2209,
+    "listed_operating": 4526,
+    "screened": 1661,
+    "watchlist": 66
+  },
+  "data_objects": 15148,
+  "data_sha256": "bc94ce7cb776af576ded3710920747153ec7ef3b25e6dff863c9669a393b6610",
+  "decision_time_utc": "2026-10-16T14:30:00Z",
+  "files": {
+    "candidates.csv": "b5139fb2254f89d32c6ca1151e919fadb6ba2de16dbe9e6c5d658f46a3b81931",
+    "changes.csv": "c850947756b0d7c2d41874ddc21c9549f0bff2eacfd0c8a645fdff5e154d51fe",
+    "gate_details.csv": "24602daeac213387c2967fe2370fb7e8a889402a5bc68a271dc781cccfa56004",
+    "quarterly_inputs.csv.gz": "70da6d9a62ef584e110661ffb12e5624b0242fa3829142ec5c0b26da96a96a4f",
+    "tracking.csv": "551a8d50c1e8bee19f4d8d4e91a7084531777b2ec09e4098e11a84dab0cecf41",
+    "universe_snapshot.csv": "7c77e376f59bb8522f9c0019b16ccb0147161e236951dc40807134b2392bf486",
+    "watchlist.csv": "3342336aa61934702cbe415b331f4780b39b1d2bc7a84d9fc6a716547545ca92"
+  },
+  "fsds_quarters": [
+    "2026q2",
+    "2026q3"
+  ],
+  "period": "2026-10-16",
+  "price_date": "2026-10-15",
+  "spy_return_6m": 0.1026516206179433
+}

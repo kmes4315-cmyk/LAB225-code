@@ -105,14 +105,19 @@ def screen_company(facts, accepts, decision_time, cfg) -> dict:
 
     opi, _, _ = merged_quarters(facts, ["OperatingIncomeLoss"], "USD", decision_time, accepts)
     out["op_income_source"] = "OperatingIncomeLoss"
-    if not opi:
+    if max(rev) not in opi:
+        # tag missing or no longer used for the latest quarter: try revenue minus total costs and expenses
         costs, _, _ = merged_quarters(facts, ["CostsAndExpenses"], "USD", decision_time, accepts)
-        opi = {e: inf.Quarter(q.start, q.end, q.val - costs[e].val, True) for e, q in rev.items() if e in costs}
-        out["op_income_source"] = "營收 − CostsAndExpenses" if opi else "無"
+        alt = {e: inf.Quarter(q.start, q.end, q.val - costs[e].val, True) for e, q in rev.items() if e in costs}
+        if max(rev) in alt:
+            opi = alt
+            out["op_income_source"] = "營收 − CostsAndExpenses"
     gp, _, _ = merged_quarters(facts, ["GrossProfit"], "USD", decision_time, accepts)
-    if not gp:
+    if max(rev) not in gp:
         cost, _, _ = merged_quarters(facts, inf.COST_OF_REVENUE_CONCEPTS, "USD", decision_time, accepts)
-        gp = {e: inf.Quarter(q.start, q.end, q.val - cost[e].val, True) for e, q in rev.items() if e in cost}
+        alt = {e: inf.Quarter(q.start, q.end, q.val - cost[e].val, True) for e, q in rev.items() if e in cost}
+        if max(rev) in alt:
+            gp = alt
     ocf, _, _ = merged_quarters(facts, inf.OCF_CONCEPTS, "USD", decision_time, accepts)
     dil_per = {c: periods_for(facts, c, "shares", decision_time, accepts) for c in inf.DILUTED_SHARES_CONCEPTS}
     dil_merged, _ = inf.merge_concepts(dil_per, inf.DILUTED_SHARES_CONCEPTS)
@@ -135,6 +140,10 @@ def screen_company(facts, accepts, decision_time, cfg) -> dict:
     out["g6"] = inf.gate_dilution(sin, last, g["g6_diluted_share_growth_max"])
 
     out["ttm_revenue"] = inf.ttm(rev, last)
+    yago_q = inf.year_ago(rev, last)
+    out["prior_ttm_revenue"] = inf.ttm(rev, yago_q.end) if yago_q else None
+    chain8 = inf.contiguous_chain(rev, last, 8) or []
+    out["revenue_restated_recent"] = any(q.restated for q in chain8)
     out["latest_q_revenue"] = rev[last].val
     out["latest_q_yoy"] = inf.yoy(rev, last)
     yago = inf.year_ago(rev, last)
@@ -334,8 +343,8 @@ def main():
             d[f"{k}_value"] = gr.value if gr else None
             d[f"{k}_detail"] = gr.detail if gr else ""
         for k in [
-            "revenue_concepts", "op_income_source", "last_quarter_end", "n_quarters", "ttm_revenue", "latest_q_revenue",
-            "latest_q_yoy", "ttm_gross_margin", "gm_change_pp", "ttm_op_margin", "ttm_impairment", "ttm_impairment_prior",
+            "revenue_concepts", "op_income_source", "last_quarter_end", "n_quarters", "ttm_revenue", "prior_ttm_revenue",
+            "latest_q_revenue", "latest_q_yoy", "ttm_gross_margin", "gm_change_pp", "ttm_op_margin", "ttm_impairment", "ttm_impairment_prior",
             "op_margin_change_ex_impairment_pp", "acquisition_share_of_revenue", "latest_filed",
             "next_report_expected", "next_revenue_needed", "next_yoy_needed",
         ]:
@@ -356,6 +365,8 @@ def main():
                     "TTM 含減損" if (res.get("ttm_impairment") or 0) > 0 or (res.get("ttm_impairment_prior") or 0) > 0 else "",
                     "可能含併購" if (res.get("acquisition_share_of_revenue") or 0) > 0.10 else "",
                     "相對強勢低於中位數" if (r.get("rs_percentile") or 100) < 50 else "",
+                    "營收曾重編（口徑可能變動）" if res.get("revenue_restated_recent") else "",
+                    "基期過小（一年前 TTM 營收 < 2,000 萬美元）" if (res.get("prior_ttm_revenue") or 0) < 2e7 else "",
                 ]
                 if f
             )
@@ -407,8 +418,8 @@ def main():
              "shares", "shares_asof", "shares_note", "market_cap", "median_dollar_volume_20d", "return_6m",
              "excess_return_6m", "in_cap_band", "scope"]
     dcols = ucols + ["rs_percentile", "result", "flags"] + [f"{k}_{s}" for k in GATE_KEYS for s in ("status", "value", "detail")] + [
-        "revenue_concepts", "op_income_source", "last_quarter_end", "n_quarters", "ttm_revenue", "latest_q_revenue",
-        "latest_q_yoy", "ttm_gross_margin", "gm_change_pp", "ttm_op_margin", "ttm_impairment", "ttm_impairment_prior",
+        "revenue_concepts", "op_income_source", "last_quarter_end", "n_quarters", "ttm_revenue", "prior_ttm_revenue",
+        "latest_q_revenue", "latest_q_yoy", "ttm_gross_margin", "gm_change_pp", "ttm_op_margin", "ttm_impairment", "ttm_impairment_prior",
         "op_margin_change_ex_impairment_pp", "acquisition_share_of_revenue", "sic_peers_n", "sic_peers_accel_share",
         "latest_filed", "next_report_expected", "next_revenue_needed", "next_yoy_needed"]
     ccols = ["source_quadrant", "group_rank", "ticker", "name", "market_cap", "price", "g2_value", "g3_value", "g3_detail",

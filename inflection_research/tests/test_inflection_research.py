@@ -241,3 +241,18 @@ def test_fsds_supplement_only_fills_missing_filings():
     assert entries[1]["start"] == "2026-01-04"
     q = inf.quarterly_from_periods({(e["start"], e["end"]): e for e in entries})
     assert q[date(2026, 7, 4)].val == 12
+
+
+def test_restated_cumulative_not_mixed_with_old_annual():
+    # 9M restated a year later (business moved to discontinued ops); FY never restated.
+    entries = [
+        fact("2024-10-01", "2025-06-30", 1950, "2025-08-01", "q3"),
+        fact("2024-10-01", "2025-06-30", 1300, "2026-08-01", "q3next"),
+        fact("2024-10-01", "2025-09-30", 2600, "2025-11-15", "k"),
+    ]
+    per = inf.latest_by_period(entries, DT)
+    q = inf.quarterly_from_periods(per)
+    assert date(2025, 9, 30) not in q  # left blank instead of 2600 - 1300
+    # without the restatement the same quarter is derived normally
+    per2 = inf.latest_by_period(entries[:1] + entries[2:], DT)
+    assert inf.quarterly_from_periods(per2)[date(2025, 9, 30)].val == 650

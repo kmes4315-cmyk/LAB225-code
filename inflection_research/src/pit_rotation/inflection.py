@@ -14,6 +14,7 @@ NINE_MONTH_DAYS = (260, 285)
 ANNUAL_DAYS = (350, 380)
 CONTIGUITY_TOLERANCE_DAYS = 7
 YEAR_AGO_TOLERANCE_DAYS = 12
+RESTATEMENT_THRESHOLD = 0.02  # smaller revisions are routine reclassifications
 
 REVENUE_CONCEPTS = [
     "Revenues",
@@ -84,14 +85,25 @@ def latest_by_period(entries: list[dict], decision_time: datetime, accept_times=
     """Map (start, end) -> entry, keeping the last version filed before the decision time."""
     accept_times = accept_times or {}
     best: dict = {}
+    first: dict = {}
     for e in entries:
         if not is_available(e, decision_time, accept_times):
             continue
         key = (e.get("start"), e["end"])
+        order = (e["filed"], e.get("accn", ""))
         cur = best.get(key)
-        if cur is None or (e["filed"], e.get("accn", "")) > (cur["filed"], cur.get("accn", "")):
+        if cur is None or order > (cur["filed"], cur.get("accn", "")):
             best[key] = e
-    return best
+        f = first.get(key)
+        if f is None or order < (f["filed"], f.get("accn", "")):
+            first[key] = e
+    out = {}
+    for key, e in best.items():
+        e = dict(e)
+        f0 = float(first[key]["val"])
+        e["restated"] = abs(float(e["val"]) - f0) > RESTATEMENT_THRESHOLD * max(abs(f0), 1.0)
+        out[key] = e
+    return out
 
 
 def merge_concepts(per_concept: dict[str, dict], priority: list[str]) -> tuple[dict, list[str]]:
@@ -148,6 +160,7 @@ class Quarter:
     val: float
     derived: bool = False
     filed: str = ""
+    restated: bool = False
 
 
 def quarterly_from_periods(periods: dict, additive: bool = True) -> dict[date, Quarter]:
@@ -163,39 +176,55 @@ def quarterly_from_periods(periods: dict, additive: bool = True) -> dict[date, Q
         if s is None:
             continue
         sd, ed = parse_date(s), parse_date(e)
-        dur.append((sd, ed, float(entry["val"]), entry.get("filed", "")))
+        dur.append((sd, ed, float(entry["val"]), entry.get("filed", ""), bool(entry.get("restated"))))
 
     quarters: dict[date, Quarter] = {}
-    for sd, ed, v, f in dur:
+    for sd, ed, v, f, r in dur:
         if in_range(days(sd, ed), QUARTER_DAYS):
             q = quarters.get(ed)
             if q is None or f > q.filed:
-                quarters[ed] = Quarter(sd, ed, v, False, f)
+                quarters[ed] = Quarter(sd, ed, v, False, f, r)
     if not additive:
         return quarters
 
     by_start: dict[date, list] = {}
-    for sd, ed, v, f in dur:
-        by_start.setdefault(sd, []).append((ed, v, f))
+    for sd, ed, v, f, r in dur:
+        by_start.setdefault(sd, []).append((ed, v, f, r))
     for sd, items in by_start.items():
         items.sort()
         for i in range(len(items)):
             for j in range(i + 1, len(items)):
-                a_end, a_val, a_f = items[i]
-                b_end, b_val, b_f = items[j]
+                a_end, a_val, a_f, a_r = items[i]
+                b_end, b_val, b_f, b_r = items[j]
                 q_start = a_end + timedelta(days=1)
-                if in_range(days(q_start, b_end), QUARTER_DAYS) and b_end not in quarters:
-                    quarters[b_end] = Quarter(q_start, b_end, b_val - a_val, True, max(a_f, b_f))
+                if not in_range(days(q_start, b_end), QUARTER_DAYS) or b_end in quarters:
+                    continue
+                if mixed_vintage((a_f, a_r), (b_f, b_r)):
+                    continue
+                quarters[b_end] = Quarter(q_start, b_end, b_val - a_val, True, max(a_f, b_f), a_r or b_r)
 
     # Q4 = FY - (Q1 + Q2 + Q3) when the three quarters tile the year's first nine months.
-    for sd, ed, v, f in dur:
+    for sd, ed, v, f, r in dur:
         if not in_range(days(sd, ed), ANNUAL_DAYS) or ed in quarters:
             continue
         chain = tile_from(quarters, sd, 3)
         if chain and in_range(days(chain[-1].end + timedelta(days=1), ed), QUARTER_DAYS):
+            if any(mixed_vintage((q.filed, q.restated), (f, r)) for q in chain):
+                continue
             q_start = chain[-1].end + timedelta(days=1)
-            quarters[ed] = Quarter(q_start, ed, v - sum(q.val for q in chain), True, f)
+            quarters[ed] = Quarter(q_start, ed, v - sum(q.val for q in chain), True, f, r)
     return quarters
+
+
+def mixed_vintage(a: tuple[str, bool], b: tuple[str, bool]) -> bool:
+    """True when one operand was restated after the other was last reported.
+
+    Subtracting a restated cumulative figure from an unrestated one (or the
+    reverse) mixes two reporting bases, e.g. before and after a business was
+    moved to discontinued operations, so such a quarter is left blank.
+    """
+    (fa, ra), (fb, rb) = a, b
+    return (ra and fa > fb) or (rb and fb > fa)
 
 
 def tile_from(quarters: dict[date, Quarter], start: date, n: int) -> list[Quarter] | None:
@@ -295,8 +324,12 @@ def gate_revenue_quarters(rev: dict[date, Quarter], min_q: int) -> GateResult:
         if contiguous_chain(rev, last, n) is None:
             break
         longest = n
-    status = PASS if longest >= min_q else FAIL
-    return GateResult(status, longest, f"最新一季止連續 {longest} 季")
+    if longest >= min_q:
+        return GateResult(PASS, longest, f"最新一季止連續 {longest} 季")
+    if len(rev) >= min_q:
+        # enough history overall, but a gap or a basis change breaks the chain: not a new listing
+        return GateResult(NA, longest, f"最新一季止只連續 {longest} 季（期間不連續或口徑變動）")
+    return GateResult(FAIL, longest, f"最新一季止連續 {longest} 季")
 
 
 def gate_ttm_growth(rev, last, threshold) -> GateResult:
