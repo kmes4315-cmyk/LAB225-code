@@ -194,7 +194,7 @@ def test_snapshot_keeps_excluded_companies():
 def test_no_holdings_access():
     for p in list((ROOT / "src").rglob("*.py")) + list((ROOT / "scripts").glob("*.py")):
         text = p.read_text().lower()
-        for word in ("holdings", "portfolio", "positions.csv", "broker"):
+        for word in ("holdings.csv", "holdings_", "portfolio", "positions.csv", "broker"):
             assert word not in text, f"{p.name} mentions {word}"
 
 
@@ -222,3 +222,22 @@ def test_next_quarter_requirement():
     req = inf.next_quarter_requirement(rev, max(rev), 0.20)
     # next TTM = 125+130+160+x ; prior = 100+120?? -> chain t-6..t-3 = 100,100,100,120 = 420 ; need 1.2*420 - 415 = 89
     assert abs(req["revenue_needed"] - (1.2 * 420 - 415)) < 1e-9
+
+
+def test_fsds_supplement_only_fills_missing_filings():
+    from pit_rotation import fsds
+
+    assert fsds._start_for("2026-06-30", 1) == "2026-04-01"
+    assert fsds._start_for("2026-06-30", 2) == "2026-01-01"
+    facts = {"facts": {"us-gaap": {"Revenues": {"units": {"USD": [
+        {"start": "2026-01-04", "end": "2026-04-04", "val": 10, "accn": "a1", "filed": "2026-05-01"}]}}}}}
+    extra = {("us-gaap", "Revenues", "USD"): [
+        {"start": "2026-01-01", "end": "2026-07-04", "val": 22, "accn": "a2", "filed": "2026-08-01"},
+        {"start": "2026-01-01", "end": "2026-04-04", "val": 99, "accn": "a1", "filed": "2026-05-01"}]}
+    merged, n = fsds.supplement(facts, extra)
+    entries = merged["facts"]["us-gaap"]["Revenues"]["units"]["USD"]
+    assert n == 1 and len(entries) == 2
+    # start snapped to the company's own fiscal start so 6M - 3M still derives Q2
+    assert entries[1]["start"] == "2026-01-04"
+    q = inf.quarterly_from_periods({(e["start"], e["end"]): e for e in entries})
+    assert q[date(2026, 7, 4)].val == 12

@@ -41,8 +41,10 @@ interpretations:
   value_vintage: "同一期間有多個申報版本時，取決策時間前最後收件的那一版"
   revenue_concept: "每家公司只用一個營收科目：在候選科目中挑最近一季有值者，同時有多個時取數值最大者"
   ttm_requires_contiguous_quarters: true
+  g4_operating_income: "用 OperatingIncomeLoss；公司沒有這個科目時，用營收 − CostsAndExpenses（同期間、同單位才算）"
   g4_turned_profitable: "TTM 營業利益現在 > 0，且 4 季前的 TTM 營業利益 <= 0"
   g5_improvement: "TTM 營業現金流 > 一年前的 TTM 營業現金流，或由負轉正"
   g6_shares: "最近一季稀釋加權股數 vs 去年同季；同一份申報裡的比較期優先（已調整分割）"
+  fsds_supplement: "XBRL companyfacts 缺的 10-Q/10-K，用 SEC Financial Statement Data Sets（2026q2、2026q3）補；期初日由期末與季數回推，再對齊公司既有的期初日（±7 天）"
   shares_for_market_cap: "dei:EntityCommonStockSharesOutstanding（封面股數，決策時間前最新）；沒有就用最近一季基本加權股數"
   industry_sync_proxy: "第一期還沒有競爭地圖卡，橫軸先用同 4 碼 SIC、且在範圍內的公司當同業（推定）"

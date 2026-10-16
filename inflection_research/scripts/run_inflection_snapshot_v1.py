@@ -26,9 +26,17 @@ import yaml  # noqa: E402
 
 from pit_rotation import inflection as inf  # noqa: E402
 from pit_rotation import universe as uni  # noqa: E402
+from pit_rotation.fsds import load_fsds, supplement  # noqa: E402
 from pit_rotation.records import sha256_bytes, write_period  # noqa: E402
 
 GATE_KEYS = ["g1", "g2", "g3", "g4", "g5", "g6"]
+FSDS_QUARTERS = ["2026q2", "2026q3"]
+FSDS_TAGS = set(
+    inf.REVENUE_CONCEPTS + inf.COST_OF_REVENUE_CONCEPTS + inf.OCF_CONCEPTS + inf.DILUTED_SHARES_CONCEPTS
+    + inf.IMPAIRMENT_CONCEPTS
+    + ["OperatingIncomeLoss", "CostsAndExpenses", "GrossProfit", "WeightedAverageNumberOfSharesOutstandingBasic",
+       "PaymentsToAcquireBusinessesNetOfCashAcquired", "EntityCommonStockSharesOutstanding"]
+)
 
 
 def load_gz_json(p: Path):
@@ -96,6 +104,11 @@ def screen_company(facts, accepts, decision_time, cfg) -> dict:
         return out
 
     opi, _, _ = merged_quarters(facts, ["OperatingIncomeLoss"], "USD", decision_time, accepts)
+    out["op_income_source"] = "OperatingIncomeLoss"
+    if not opi:
+        costs, _, _ = merged_quarters(facts, ["CostsAndExpenses"], "USD", decision_time, accepts)
+        opi = {e: inf.Quarter(q.start, q.end, q.val - costs[e].val, True) for e, q in rev.items() if e in costs}
+        out["op_income_source"] = "營收 − CostsAndExpenses" if opi else "無"
     gp, _, _ = merged_quarters(facts, ["GrossProfit"], "USD", decision_time, accepts)
     if not gp:
         cost, _, _ = merged_quarters(facts, inf.COST_OF_REVENUE_CONCEPTS, "USD", decision_time, accepts)
@@ -205,6 +218,15 @@ def main():
     spy_now, spy_then = uni.price_on(spy_bars, price_date), uni.price_on(spy_bars, rs_start)
     spy_ret = spy_now[1] / spy_then[1] - 1.0 if spy_now and spy_then else None
 
+    fsds: dict = {}
+    for q in FSDS_QUARTERS:
+        p = cache / f"sec/fsds/{q}.zip.gz"
+        if p.exists():
+            for cik_, tags_ in load_fsds(gzip.decompress(p.read_bytes()), FSDS_TAGS).items():
+                for k_, v_ in tags_.items():
+                    fsds.setdefault(cik_, {}).setdefault(k_, []).extend(v_)
+    supplemented = 0
+
     tickers = json.loads(gzip.decompress((cache / "sec/company_tickers_exchange.json.gz").read_bytes()))
     ciks = sorted({row[0] for row in tickers["data"] if row[3] in listed})
 
@@ -221,6 +243,8 @@ def main():
         sic = uni.sic_code(sub)
         ftype = uni.filer_type(sub, decision_time)
         facts = load_gz_json(cache / f"sec/companyfacts/{cik}.json.gz")
+        facts, n_added = supplement(facts, fsds.get(cik))
+        supplemented += 1 if n_added else 0
         chart = load_gz_json(cache / f"yahoo/chart/{uni.yahoo_symbol(ticker)}.json.gz")
         bars, splits = uni.chart_bars(chart or {})
         px = uni.price_on(bars, price_date)
@@ -310,8 +334,8 @@ def main():
             d[f"{k}_value"] = gr.value if gr else None
             d[f"{k}_detail"] = gr.detail if gr else ""
         for k in [
-            "revenue_concepts", "last_quarter_end", "n_quarters", "ttm_revenue", "latest_q_revenue", "latest_q_yoy",
-            "ttm_gross_margin", "gm_change_pp", "ttm_op_margin", "ttm_impairment", "ttm_impairment_prior",
+            "revenue_concepts", "op_income_source", "last_quarter_end", "n_quarters", "ttm_revenue", "latest_q_revenue",
+            "latest_q_yoy", "ttm_gross_margin", "gm_change_pp", "ttm_op_margin", "ttm_impairment", "ttm_impairment_prior",
             "op_margin_change_ex_impairment_pp", "acquisition_share_of_revenue", "latest_filed",
             "next_report_expected", "next_revenue_needed", "next_yoy_needed",
         ]:
@@ -383,8 +407,8 @@ def main():
              "shares", "shares_asof", "shares_note", "market_cap", "median_dollar_volume_20d", "return_6m",
              "excess_return_6m", "in_cap_band", "scope"]
     dcols = ucols + ["rs_percentile", "result", "flags"] + [f"{k}_{s}" for k in GATE_KEYS for s in ("status", "value", "detail")] + [
-        "revenue_concepts", "last_quarter_end", "n_quarters", "ttm_revenue", "latest_q_revenue", "latest_q_yoy",
-        "ttm_gross_margin", "gm_change_pp", "ttm_op_margin", "ttm_impairment", "ttm_impairment_prior",
+        "revenue_concepts", "op_income_source", "last_quarter_end", "n_quarters", "ttm_revenue", "latest_q_revenue",
+        "latest_q_yoy", "ttm_gross_margin", "gm_change_pp", "ttm_op_margin", "ttm_impairment", "ttm_impairment_prior",
         "op_margin_change_ex_impairment_pp", "acquisition_share_of_revenue", "sic_peers_n", "sic_peers_accel_share",
         "latest_filed", "next_report_expected", "next_revenue_needed", "next_yoy_needed"]
     ccols = ["source_quadrant", "group_rank", "ticker", "name", "market_cap", "price", "g2_value", "g3_value", "g3_detail",
@@ -419,6 +443,8 @@ def main():
         "data_sha256": dv,
         "data_objects": n_objects,
         "spy_return_6m": spy_ret,
+        "fsds_quarters": FSDS_QUARTERS,
+        "companies_supplemented_from_fsds": supplemented,
         "counts": {
             "listed_operating": len(universe_rows),
             "in_cap_band": sum(1 for r in universe_rows if r["in_cap_band"]),
