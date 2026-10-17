@@ -37,4 +37,5 @@ python -m pytest -q tests
 - 報告：`docs/first_period_2026-10-16.md`
 - 正式紀錄：`data/prospective/inflection_v1/2026-10-16-r1/`（修正並取代 `2026-10-16`，兩者都保留）
 - 競爭地圖卡：`data/inflection/competitor_cards_v1/2026-10-16/cards.md`
+- 產業地圖（對手、市佔推估、商業模式對比，含卡片勘誤）：`data/inflection/industry_maps_v1/2026-10-16/`
 - 原始資料下載紀錄（SHA-256）：`data/provenance/`
